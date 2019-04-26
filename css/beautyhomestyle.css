@@ -194,6 +194,7 @@ i.fa {
     "footer footer";
     grid-template-columns: 40% auto;
     grid-template-rows:7vh 1.25fr 1fr 20vh;
+  
   }
 
   /* mobile Screens */
@@ -242,6 +243,12 @@ padding: 1.8rem 0rem 0rem 1.6rem;
     text-align: center;
   }
 
+  .centered {
+    justify-self: center;
+    align-self: center;  
+  }
+
+
   #profile-pic{
   border: 6px solid white;
     border-radius: 50%;
@@ -254,6 +261,7 @@ padding: 1.8rem 0rem 0rem 1.6rem;
     margin-top: -12rem;  
   }
 
+  
   main.home {
     grid-area: intro-text;
     float: right;
