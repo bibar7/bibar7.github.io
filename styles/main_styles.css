@@ -172,7 +172,12 @@ h1 {
 
 h2, h3, h4, h5, h6
 {
-	font-family: 'Bright Sunshine Cap', sans-serif;
+	font-family: 'Bright Sunshine Cap', 'Copperplate', fantasy;
+}
+
+h4, h5, h6 {
+	font-family: 'Los Angeles', 'Century Gothic', 'Optima', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, h6
@@ -922,6 +927,7 @@ section
 }
 .home_subtitle
 {
+	font-family: 'Bright Sunshine Cap', 'Copperplate', fantasy;
 	font-size: 18px;
 	font-weight: 700;
 	color: #ffffff;
