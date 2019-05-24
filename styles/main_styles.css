@@ -49,9 +49,9 @@
 /* Display */
 
 @font-face {
-	font-family: 'Bright Sunshine Cap';
-	src: url('https://bibar7.github.io/styles/fonts/bright_sunshine_cap-webfont.woff') format('woff2'),
-			url('https://bibar7.github.io/styles/fonts/bright_sunshine_cap-webfont.woff2') format('woff');
+	font-family: 'Rome Regular';
+	src: url('https://bibar7.github.io/styles/fonts/Rome-Regular.woff') format('woff2'),
+			url('https://bibar7.github.io/styles/fonts/Rome-Regular.woff2') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -59,11 +59,12 @@
 /* Cursive */
 
 @font-face {
-	font-family: 'Bright Sunshine';
-	src: url('https://bibar7.github.io/styles/fonts/bright_sunshine-webfont.woff') format('woff2'),
-			url('https://bibar7.github.io/styles/fonts/bright_sunshine-webfont.woff2') format('woff');
+	font-family: 'oliveregular';
+	src: url('https://bibar7.github.io/styles/fonts/olive-webfont.woff2') format('woff2'),
+			 url('https://bibar7.github.io/styles/fonts/olive-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+
 }
 
 
@@ -189,7 +190,6 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: 0;
 	color: #2c2c2c;
 	font-weight: 700;
-	letter-spacing: 0.2em;
 }
 img
 {
@@ -928,10 +928,9 @@ section
 .home_subtitle
 {
 	font-family: 'Bright Sunshine Cap', 'Copperplate', fantasy;
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 36px;
+	font-weight: 400;
 	color: #ffffff;
-	letter-spacing: 0.2em;
 	line-height: 1.2;
 	padding-left: 6px;
 }
@@ -941,10 +940,9 @@ section
 }
 .home_title h1
 {
-	font-size: 72px;
-	font-weight: 300;
+	font-size: 100px;
+	font-weight: 100;
 	color: #ffffff;
-	letter-spacing: 0.2em;
 }
 .home_title h1:not(:last-of-type)
 {
