@@ -53,8 +53,8 @@
 
 @font-face {
 	font-family: 'oliveregular';
-	src: url('olive-webfont.woff2') format('woff2'),
-			 url('olive-webfont.woff') format('woff');
+	src: url('https://bibar7.github.io/styles/fonts/olive-webfont.woff2') format('woff2'),
+			 url('https://bibar7.github.io/styles/fonts/olive-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
