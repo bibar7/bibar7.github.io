@@ -168,12 +168,12 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 
 h1 {
-	font-family: 'Bright Sunshine', 'Brush Script MT', cursive;
+	font-family: 'oliveregular', 'Brush Script MT', cursive;
 }
 
 h2, h3, h4, h5, h6
 {
-	font-family: 'Bright Sunshine Cap', 'Copperplate', fantasy;
+	font-family: 'Rome Regular', 'Copperplate', fantasy;
 }
 
 h4, h5, h6 {
@@ -927,7 +927,7 @@ section
 }
 .home_subtitle
 {
-	font-family: 'Bright Sunshine Cap', 'Copperplate', fantasy;
+	font-family: 'Rome Regular', 'Copperplate', fantasy;
 	font-size: 36px;
 	font-weight: 400;
 	color: #ffffff;
