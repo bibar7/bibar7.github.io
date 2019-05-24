@@ -30,8 +30,8 @@
 
 @font-face {
 	font-family: 'Primitiva Slab';
-	src: url('styles/fonts/PrimitivaSlab.woff2') format('woff2'),
-			url('styles/fonts/PrimitivaSlab.woff') format('woff');
+	src: url('https://bibar7.github.io/styles/fonts/PrimitivaSlab.woff2') format('woff2'),
+			url('https://bibar7.github.io/styles/fonts/PrimitivaSlab.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -40,8 +40,18 @@
 
 @font-face {
 	font-family: 'Los Angeles';
-	src: url('styles/fonts/LosAngeles-Regular.woff2') format('woff2'),
-			url('styles/fonts/LosAngeles-Regular.woff') format('woff');
+	src: url('https://bibar7.github.io/styles/fonts/LosAngeles-Regular.woff2') format('woff2'),
+			url('https://bibar7.github.io/styles/fonts/LosAngeles-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Display */
+
+@font-face {
+	font-family: 'Bright Sunshine Cap';
+	src: url('https://bibar7.github.io/styles/fonts/bright_sunshine_cap-webfont.woff') format('woff2'),
+			url('https://bibar7.github.io/styles/fonts/bright_sunshine_cap-webfont.woff2') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -49,9 +59,9 @@
 /* Cursive */
 
 @font-face {
-	font-family: 'Brilliant Signature 1';
-	src: url('styles/fonts/BrilliantSignature-1Regular.woff2') format('woff2'),
-			url('styles/fonts/BrilliantSignature-1Regular.woff') format('woff');
+	font-family: 'Bright Sunshine';
+	src: url('https://bibar7.github.io/styles/fonts/bright_sunshine-webfont.woff') format('woff2'),
+			url('https://bibar7.github.io/styles/fonts/bright_sunshine-webfont.woff2') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -157,12 +167,12 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 
 h1 {
-	font-family: 'Brilliant Signature 1', 'Brush Script MT', cursive;
+	font-family: 'Bright Sunshine', 'Brush Script MT', cursive;
 }
 
 h2, h3, h4, h5, h6
 {
-	font-family: 'Los Angeles', sans-serif;
+	font-family: 'Bright Sunshine Cap', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -174,7 +184,6 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: 0;
 	color: #2c2c2c;
 	font-weight: 700;
-	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
 img
@@ -424,7 +433,6 @@ section
 	font-size: 14px;
 	font-weight: 700;
 	color: #909090;
-	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	line-height: 1.2;
 }
@@ -917,7 +925,6 @@ section
 	font-size: 18px;
 	font-weight: 700;
 	color: #ffffff;
-	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	line-height: 1.2;
 	padding-left: 6px;
@@ -931,7 +938,6 @@ section
 	font-size: 72px;
 	font-weight: 300;
 	color: #ffffff;
-	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
 .home_title h1:not(:last-of-type)
@@ -1094,7 +1100,6 @@ section
 	font-size: 18px;
 	font-weight: 700;
 	color: #ffffff;
-	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
 .intro_box_text
