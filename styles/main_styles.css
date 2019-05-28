@@ -32,11 +32,12 @@
 /* Sans Serif */
 
 @font-face {
-	font-family: 'Los Angeles';
-	src: url('https://bibar7.github.io/styles/fonts/LosAngeles-Regular.woff2') format('woff2'),
-			url('https://bibar7.github.io/styles/fonts/LosAngeles-Regular.woff') format('woff');
+	font-family: '00370regular';
+	src: url('https://bibar7.github.io/styles/00370-webfont.woff2') format('woff2'),
+			 url('https://bibar7.github.io/styles/00370-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+
 }
 
 /* Display */
@@ -51,10 +52,11 @@
 
 /* Cursive */
 
+
 @font-face {
-	font-family: 'oliveregular';
-	src: url('https://bibar7.github.io/styles/fonts/olive-webfont.woff2') format('woff2'),
-			 url('https://bibar7.github.io/styles/fonts/olive-webfont.woff') format('woff');
+	font-family: 'corinthiaregular';
+	src: url('https://bibar7.github.io/styles/corinthia-webfont.woff2') format('woff2'),
+			 url('https://bibar7.github.io/styles/corinthia-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
@@ -172,13 +174,13 @@ h1 {
 	font-family: 'capistranobfw01-regularRg', 'Brush Script MT', cursive;
 }
 
-h2, h3, h4, h5, h6
+h2, h3
 {
-	font-family: 'oliveregular', 'Papyrus', fantasy;
+	font-family: 'corinthiaregular', 'Papyrus', fantasy;
 }
 
 h4, h5, h6 {
-	font-family: 'Rome', 'Century Gothic', 'Optima', sans-serif;
+	font-family: 'Rome Regular', 'Century Gothic', 'Optima', sans-serif;
 
 }
 
@@ -484,7 +486,7 @@ section
 {
 	margin-left: 100px;
 	letter-spacing: .1em;
-	font-family: 'Los Angeles', 'Optima', 'Segoe UI', sans-serif;
+	font-family: '00370regular', 'Optima', 'Segoe UI', sans-serif;
 	font-weight: 100;
 
 }
@@ -932,7 +934,7 @@ font-variant: small-caps;
 }
 .home_subtitle
 {
-	font-family: 'Los Angeles', 'Geneva', 'Century Gothic', sans-serif;
+	font-family: '00370regular', 'Geneva', 'Century Gothic', sans-serif;
 	font-size: 32px;
 	font-weight: 600;
 	font-style: italic;
@@ -1155,7 +1157,7 @@ font-variant: small-caps;
 
 .quote
 {
-	font-family: 'oliveregular', 'Papyrus', fantasy;
+	font-family: 'corinthiaregular', 'Papyrus', fantasy;
 	background: #ffffff;
 	padding-bottom: 97px;
 }
