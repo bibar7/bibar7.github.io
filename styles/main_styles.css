@@ -635,8 +635,9 @@ font-variant: small-caps;
 }
 
 .btn-f {
-	  background: linear-gradient(#5e7fc1, #2d4373);
-	  border: 0.2em ridge white;
+	  /* background: linear-gradient(#5e7fc1, #2d4373); */
+	  background: linear-gradient(#F53B9A, #5b44c4);
+		border: 0.2em ridge white;
 	  border-width: 03px 03px 03px 03px;
 	color: white;
     backface-visibility: hidden;
@@ -666,7 +667,8 @@ font-variant: small-caps;
 		}
 
 		.btn-i {
-			background:    linear-gradient(#405de6, #e1306c, #FCAF45);
+			/* background:    linear-gradient(#405de6, #e1306c, #FCAF45); */
+			background: linear-gradient(#F53B9A, #5b44c4);
 			border: 0.2em ridge white;
 			border-width: 03px 03px 03px 03px;
 		  color: white;
@@ -695,7 +697,8 @@ font-variant: small-caps;
 			  }
 
 			  .btn-s {
-				background:    linear-gradient(#fedd61, #dfb001);
+				/* background:    linear-gradient(#fedd61, #dfb001); */
+				background: linear-gradient(#F53B9A, #5b44c4);
 				border: 0.2em ridge white;
 				border-width: 03px 03px 03px 03px;
 				border-radius: 50%;
@@ -723,7 +726,8 @@ font-variant: small-caps;
 				  }
 
 				  .btn-e {
-					background: linear-gradient(#c8cddc, #4f537d);
+					/* background: linear-gradient(#c8cddc, #4f537d); */
+					background: linear-gradient(#F53B9A, #5b44c4);
 					border: 0.2em ridge white;
 					border-width: 03px 03px 03px 03px;
 					border-radius: 50%;
