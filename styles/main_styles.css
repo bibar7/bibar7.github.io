@@ -32,13 +32,12 @@
 /* Sans Serif */
 
 @font-face {
-	font-family: '00370regular';
-	src: url('https://bibar7.github.io/styles/fonts/00370-webfont.woff2') format('woff2'),
-			 url('https://bibar7.github.io/styles/fonts/00370-webfont.woff') format('woff');
-	font-weight: normal;
+	font-family: 'AMCCD normal';
 	font-style: normal;
+	font-weight: normal;
+	src: local('AMCCD normal'), url('https://bibar7.github.io/styles/fonts/Mukesh_Creative_Designs_V2.woff') format('woff');
+	}
 
-}
 
 /* Display */
 
@@ -486,7 +485,7 @@ section
 {
 	margin-left: 100px;
 	letter-spacing: .1em;
-	font-family: '00370regular', 'Optima', 'Segoe UI', sans-serif;
+	font-family: 'AMCCD normal', 'Optima', 'Segoe UI', sans-serif;
 	font-weight: 100;
 
 }
@@ -934,7 +933,7 @@ font-variant: small-caps;
 }
 .home_subtitle
 {
-	font-family: '00370regular', 'Geneva', 'Century Gothic', sans-serif;
+	font-family: 'AMCCD normal', 'Geneva', 'Century Gothic', sans-serif;
 	font-size: 32px;
 	font-weight: 600;
 	font-style: italic;
