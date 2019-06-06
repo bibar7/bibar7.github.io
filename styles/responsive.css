@@ -99,11 +99,23 @@
 	}
 	.header_social
 	{
-		right: 15px;
+		right: 5px;
+	}
+	.btn-social {
+		border: 0.1em ridge white;
+		border-width: 02px 02px 02px 02px;
+		width: 2.50em;
+		height: 2em;
+		size: 8px;
+
+	}
+
+	nav ul {
+		margin-left: -50px;
 	}
 	.main_nav ul li
 	{
-		margin-right: 20px;
+		margin-right: 5px;
 	}
 	.header_social ul li:not(:last-of-type)
 	{
