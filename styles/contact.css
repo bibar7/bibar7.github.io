@@ -20,8 +20,49 @@
 1. Fonts
 ***********/
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,800');
+/*  Serif 	font-family: 'Glass Antiqua', 'Goudy Old Style', 'Palatino', serif; */
 
+
+/* Sans Serif */
+
+@font-face {
+	font-family: 'AMCCD normal';
+	font-style: normal;
+	font-weight: normal;
+	src: local('AMCCD normal'), url('https://bibar7.github.io/styles/fonts/Mukesh_Creative_Designs_V2.woff') format('woff');
+	}
+
+
+/* Display */
+
+@font-face {
+	font-family: 'Rome Regular';
+	src: url('https://bibar7.github.io/styles/fonts/Rome-Regular.woff') format('woff2'),
+			url('https://bibar7.github.io/styles/fonts/Rome-Regular.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Cursive */
+
+
+@font-face {
+	font-family: 'corinthiaregular';
+	src: url('https://bibar7.github.io/styles/fonts/corinthia-webfont.woff2') format('woff2'),
+			 url('https://bibar7.github.io/styles/fonts/corinthia-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'capistranobfw01-regularRg';
+	src: url('https://bibar7.github.io/styles/fonts/CapistranoBFW01-Regular.woff2') format('woff2'),
+			 url('https://bibar7.github.io/styles/fonts/CapistranoBFW01-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
 /*********************************
 2. Body and some general stuff
 *********************************/
@@ -126,7 +167,6 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: 0;
 	color: #2c2c2c;
 	font-weight: 700;
-	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
 img
