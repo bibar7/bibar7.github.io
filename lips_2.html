@@ -1,137 +1,340 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+<title>GiGi's Beauty Corner</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Sportify template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Responsive Web Design: Viewport -->
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
 
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Beauty tips, tricks, hacks, and tutorials intended as advice for normal everyday women who love makeup and want to refine their skills."
-    />
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <meta
-      name="keywords"
-      content="makeup, beauty, normal, makeup brushes, eyeshadow palette,contour, blush, highlight"
-    />
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
 
-    <!-- External CSS: Normalize -->
+<link rel="stylesheet" type="text/css" href="styles/subpage.css">
+<link rel="stylesheet" type="text/css" href="styles/subpage_responsive.css">
 
-    <link rel="stylesheet" href="css/normalize.css" />
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Glass+Antiqua&display=swap" rel="stylesheet">
 
-    <!-- My Stylesheet -->
+<!--Cosmetics Icon Font-->
+<link rel="stylesheet"
+type="text/css"
+href="styles/fonts/flaticon.css"> 
 
-    <link rel="stylesheet" href="css/beautyhomestyle.css" />
-    <link rel="stylesheet" href="css/lips.css" />
 
-    <!-- Icon Font -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css">
+<!-- Icons -->
+<link rel="stylesheet" href="styles/fonts/ionicons/ionicons.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-<!--Cosmetics Icn Font-->
-          <link rel="stylesheet"
-          type="text/css"
-          href="fonts/flaticon.css"> 
 
-    <!-- My JavaScript-->
-    <script src="vendor/jquery.js"></script>
 
-    <script src="js/beautyhomescript.js"></script>
 
-    <title>Eyes (GiGi's Beauty Corner)</title>
-  </head>
-  <body>
-      <div class="desktop-eyes">
-          <nav class="navigation">
-            <ul id="beauty-menu">
-    
-              <li class="home" id="home-menu">
-                <a href="index.html"
-                  class="nav-home active">
-                  <span><i class="home"></i>
-                    Home
-                </span>
-                </a>
-              </li>
-    
-              <li class="submenu" id="hair-menu">
-                <a  href="#" class="submenu-button nav-li nav-hair">
-                    <span><i class="flaticon-007-comb"></i>
-                        Hair
-                    </span>
-              </a>
-               <ul class="submenu-child nav-hair">
-                    <li><a href="Hair_1.html"><span><i class="flaticon-045-skincare"></i>My Natural Hair Care Routine</span></a></li>
-                    <li><a href="Hair_2.html"><span><i class="flaticon-041-brush-1"></i>Twist Out Tutorial</span></a></li>
-    
-                </ul>
-            </li>
-    
-              <li class="active submenu" id="lips-menu">
-                  <a  href="#" class="submenu-button nav-li nav-lips">
-                        <span><i class="flaticon-027-lipstick"></i>
-                            Lips
-                        </span>
-                </a>
-                <ul class="submenu-child nav-lips">
-                    <li class="l"><a href="Lips_1.html"><span><i class="flaticon-022-gloss"></i>Lipstick Hacks</span></a></li>
-                    <li class="l"><a href="Lips_2.html"><span><i class="flaticon-026-liner"></i>Bold Lipstick or Neutral? An Overview</span></a></li>
-                  </ul>
-    
-                </li>
-              <li class="submenu" id="face-menu">
-                    <a href="#" class="submenu-button nav-li nav-face"><span><i class="flaticon-021-foundation-1"></i>Face</span></a>
-              <ul class="submenu-child nav-face">
-                    <li><a href="Face_1.html"><span><i class="flaticon-038-make-up-3"></i>Top 10 Tricks for Better Foundation</span></a></li>
-                    <li><a href="Face_2.html"><span><i class="flaticon-013-egg"></i>Highlight and Contour Tutorial</span></a></li>
-                </ul>
-                </li>
-              <li class="submenu" id="eyes-menu">
-                  <a  href="#" class="submenu-button nav-li nav-eyes">
-                      <span><i class="flaticon-029-mascara"></i>
-                        Eyes
-                    </span>
-                  </a>
-                  <ul class="submenu-child nav-eyes">
-                        <li><a href="Eyes_1.html"><span><i class="flaticon-016-eyeliner"></i>My Guide to Eyeshadow</span></a></li>
-                        <li><a href="Eyes_2.html"><span><i class="flaticon-029-mascara"></i>Professional Step-by-Step Eyeshadow</span></a></li>
-                    </ul>
-                </li>
-            </ul>
-          </nav>
-               <sidebar class="lips"> </sidebar>
-                <main class="lips">
-                    <div class='embed-container'><iframe src='https://www.youtube.com/embed/eNuSSVAK1Mo' frameborder='0' allowfullscreen></iframe></div>
-                  
+</head>
+<body>
 
-                </main>
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+            <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
                 
-                <footer class="footer" >
-                    <div class="foot-wrapper">
-                          <ul class="social">
-                            <li class="foot-li"><a href="https://www.facebook.com/bbarber07" class="fab fa-facebook-f f-button"></a></li>
-                            <li class="foot-li"><a href="https://twitter.com/unefemmegigi" class="fab fa-twitter t-button"></a></li>
-                            <li class="foot-li"><a href="https://www.instagram.com/histoiredunefemmegigi" class="fab fa-instagram i-button"></a></li>
-                            <li class="foot-li"><a href="https://www.snapchat.com/add/bbarber07.89" class="fab fa-snapchat-ghost s-button"></a></li>
-                            <li class="foot-li"><a href="https://www.youtube.com/channel/UCMG1kd5gKFXBsihb4rf2hTw" class="fab fa-youtube y-button""></a></li>
-                            <li class="foot-li"><a href="mailto: bbarber07.89@gmail.com?subject = GiGi's Beauty Corner Feedback"
-                              class="fa fa-envelope e-button"></a></li>
-                              <li class="foot-li"><h2 class="attr"><p>Font generated by 
-                                  <a href="https://www.flaticon.com">flaticon.com</a>. Under 
-                                  <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="050-wax" 
-                                  href="https://www.flaticon.com/authors/iconixar">iconixar.</a></p> </h2></li>
-                          </ul>
-                        
-                  
-                    </div>
-                      <br/>
-                 
-                      <div style="clear: both;"></div>
-            
-                    </div>
-                  </footer>
+                <!-- Logo -->
+                <div class="logo"><a href="#"><img src="images/logo_1.png" alt=""></a></div>
+    
+                <!-- Main Nav -->
+                <nav class="main_nav">
+                    <ul class="d-flex flex-row align-items-center justify-content-center">
+                        <li class="active"><a href="index.html"><i class="flaticon-house" style="margin-right: 20px;"></i>home</a></li>
+                        <li class="has_children">
+                                <a href="#">
+                                        <i class="flaticon-mascara" style="margin-left: -20px;"></i>
+                                        eyes
+                                    </a>
+                                <ul>
+                                        <li><a href="eyes_1.html"><span><i class="flaticon-eyeliner"></i>My Guide to Eyeshadow</span></a></li>
+                        <li><a href="eyes_2.html"><span><i class="flaticon-mascara"></i>Professional Step-by-Step Eyeshadow</span></a></li>
+                    </ul>
+                                </li>
+                            <li class="has_children">
+                                <a href="#">
+                                    <i class="flaticon-foundation" style="margin-left: -20px;"></i>
+                                    face
+                                </a>
+                            <ul>
+                                <li><a href="#"><span><i class="flaticon-make-up"></i>Top 10 Tricks for Better Foundation</span></a></li>
+                                <li><a href="face_2.html"><span><i class="flaticon-egg"></i>Highlight and Contour Tutorial</span></a></li>
+                           <li><a href="#"><span><i class="flaticon-sun"></i>Summer Foundation Hacks</span></a></li>
+                                  </ul></li>
+                            <li class="has_children">
+                                <a href="#">
+                                    <i class="flaticon-lipstick-2" style="margin-left: -20px;"></i>
+                                    lips
+                                </a>
+                            <ul>
+                                <li class="l"><a href="#"><span><i class="flaticon-gloss"></i>Lipstick Hacks</span></a></li>
+                                <li class="l"><a href="lips_2.html"><span><i class="flaticon-liner"></i>Bold Lipstick or Neutral? An Overview</span></a></li>
+                                  </ul></li>
+                            <li class="has_children">
+                                <a href="#">
+                                    <i class="flaticon-comb-1" style="margin-left: -45px;"></i> 
+                                    hair
+                                </a>
+                                <ul>
+                                    <li><a href="#"><span><i class="flaticon-hair"></i>My Natural Hair Care Routine</span></a></li>
+                                    <li><a href="#"><span><i class="flaticon-barber"></i>Twist Out Tutorial</span></a></li>
+                                      </ul>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <!-- Social -->
+                <div class="social header_social">
+                    <ul class="d-flex flex-row align-items-center justify-content-start">
+                        <li>
+                                <a role="button" href="https://www.facebook.com/bbarber07" class="btn-f text-center btn-social">
+                                    <i class="fab fa-facebook-f" aria-hidden="true" style="margin-left: -3px; margin-bottom: 7px;"></i>
+                                </a>
+                            
+                            </li>
+                        <li>
+                                <a role="button" href="https://www.instagram.com/histoiredunefemmegigi" class="btn-i text-center btn-social">
+                                    <i class="fab fa-instagram" aria-hidden="true" style="margin-left: -3px; margin-bottom: 7px;"></i>
+                                </a>
+                            </li>
+                        <li>
+                                <a role="button" href="https://www.snapchat.com/add/bbarber07.89" class="btn-s text-center btn-social">
+                                    <i class="fab fa-snapchat" aria-hidden="true" style="margin-left: -3px; margin-bottom: 7px;"></i>
+                                </a>
+                        </li>
+                        <li>
+                                <a role="button" href="mailto: bibar7@gmail.com?subject = GiGi's Beauty Corner Feedback" class="btn-e text-center btn-social">
+                                    <i class="fas fa-envelope-open-text" aria-hidden="true" style="margin-left: -3px; margin-bottom: 7px;"></i>
+                                </a>
+                        </li>
+                    </ul>
                 </div>
-              </body>
-            </html>
+    
+                <!-- Hamburger -->
+                <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    
+            </div>
+        </header>
+    
+        <!-- Fixed Header -->
+    
+        <header class="fixed_header">
+            <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
+                
+                <!-- Logo -->
+                <div class="logo"><a href="#"><img src="images/logo_1.png" alt=""></a></div>
+    
+                <!-- Main Nav -->
+                <nav class="main_nav">
+                    <ul class="d-flex flex-row align-items-center justify-content-center">
+                            <li class="active"><a href="index.html"><i class="flaticon-house" style="margin-right: 20px;"></i>home</a></li>
+                        <li class="has_children">
+                                <a href="#">
+                                        <i class="flaticon-mascara" style="margin-left: -20px;"></i>
+                                        eyes
+                                    </a>
+                                <ul>
+                                        <li><a href="eyes_1.html"><span><i class="flaticon-eyeliner"></i>My Guide to Eyeshadow</span></a></li>
+                        <li><a href="eyes_2.html"><span><i class="flaticon-mascara"></i>Professional Step-by-Step Eyeshadow</span></a></li>
+                    </ul>
+                                </li>
+                            <li class="has_children">
+                                <a href="#">
+                                    <i class="flaticon-foundation" style="margin-left: -20px;"></i>
+                                    face
+                                </a>
+                            <ul>
+                                <li><a href="#"><span><i class="flaticon-make-up"></i>Top 10 Tricks for Better Foundation</span></a></li>
+                                <li><a href="face_2.html"><span><i class="flaticon-egg"></i>Highlight and Contour Tutorial</span></a></li>
+                           <li><a href="#"><span><i class="flaticon-sun"></i>Summer Foundation Hacks</span></a></li>
+                                  </ul></li>
+                            <li class="has_children">
+                                <a href="#">
+                                    <i class="flaticon-lipstick-2" style="margin-left: -20px;"></i>
+                                    lips
+                                </a>
+                            <ul>
+                                <li class="l"><a href="#"><span><i class="flaticon-gloss"></i>Lipstick Hacks</span></a></li>
+                                <li class="l"><a href="lips_2.html"><span><i class="flaticon-liner"></i>Bold Lipstick or Neutral? An Overview</span></a></li>
+                                  </ul></li>
+                            <li class="has_children">
+                                <a href="#">
+                                    <i class="flaticon-comb-1" style="margin-left: -45px;"></i> 
+                                    hair
+                                </a>
+                                <ul>
+                                    <li><a href="#"><span><i class="flaticon-hair"></i>My Natural Hair Care Routine</span></a></li>
+                                    <li><a href="#"><span><i class="flaticon-barber"></i>Twist Out Tutorial</span></a></li>
+                                      </ul>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <!-- Social -->
+                <div class="social header_social">
+                    <ul class="d-flex flex-row align-items-center justify-content-start">
+                            <li>
+                                    <a role="button" href="https://www.facebook.com/bbarber07" class="btn-f text-center btn-social">
+                                        <i class="fab fa-facebook-f" aria-hidden="true" style="margin-left: -3px; margin-bottom: 7px;"></i>
+                                    </a>
+                                
+                                </li>
+                            <li>
+                                    <a role="button" href="https://www.instagram.com/histoiredunefemmegigi" class="btn-i text-center btn-social">
+                                        <i class="fab fa-instagram" aria-hidden="true" style="margin-left: -3px; margin-bottom: 7px;"></i>
+                                    </a>
+                                </li>
+                            <li>
+                                    <a role="button" href="https://www.snapchat.com/add/bbarber07.89" class="btn-s text-center btn-social">
+                                        <i class="fab fa-snapchat" aria-hidden="true" style="margin-left: -3px; margin-bottom: 7px;"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a role="button" href="mailto: bibar7@gmail.com?subject = GiGi's Beauty Corner Feedback" class="btn-e text-center btn-social">
+                                        <i class="fas fa-envelope-open-text" aria-hidden="true" style="margin-left: -3px; margin-bottom: 7px;"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                </div>
+    
+                <!-- Hamburger -->
+                <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    
+            </div>
+        </header>
+    
+        <!-- Menu -->
+    
+        <div class="menu">
+            <div class="menu_door door_left"></div>
+            <div class="menu_door door_right"></div>
+            <div class="menu_content d-flex flex-column align-items-center justify-content-center">
+                <div class="menu_close">close</div>
+                <div class="menu_nav_container">
+                    <nav class="menu_nav text-center">
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="eyes_1.html">eyes</a></li>
+                            <li><a href="face_1.html">face</a></li>
+                            <li><a href="lips_1.html">lips</a></li>
+                            <li><a href="hair_1.html">hair</a></li>
+                            <li><a href="gigi-beauty-discussion.html">comments</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="social menu_social">
+                    <ul class="d-flex flex-row align-items-center justify-content-start">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/classes.jpg" data-speed="0.8"></div>
+		<div class="home_overlay"></div>
+		<div class="home_container d-flex flex-column align-items-center justify-content-center">
+			<div class="home_title"><h1>Subpage Template</h1></div>
+		</div>
+	</div>
+
+	<!-- Main Section -->
+
+    
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_content">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="footer_logo text-center"><a href="#"><img src="images/logo_3.png" alt=""></a></div>
+					</div>
+				</div>
+				<div class="row footer_row">
+					<div class="col-lg-4 footer_col">
+						<div class="footer_item text-center">
+							<div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+								<div><img src="images/phone.png" alt=""></div>
+							</div>
+							<div class="footer_title">talk to us</div>
+							<div class="footer_list">
+								<ul>
+									<li>+34 5667 4332 244</li>
+									<li>+224 667 889</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 footer_col">
+						<div class="footer_item text-center">
+							<div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+								<div><img src="images/mail.png" alt=""></div>
+							</div>
+							<div class="footer_title">e-mail</div>
+							<div class="footer_list">
+								<ul>
+									<li>Contact@sportify25.com</li>
+									<li>office@sportify25.com</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 footer_col">
+						<div class="footer_item text-center">
+							<div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+								<div><img src="images/contact.png" alt=""></div>
+							</div>
+							<div class="footer_title">location</div>
+							<div class="footer_list">
+								<ul>
+									<li>MAin str. 25</li>
+									<li>458811 CA</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bar d-flex flex-row align-items-center justify-content-center">
+			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+<script src="js/contact.js"></script>
+<script id="dsq-count-scr" src="//gigis-beauty-corner.disqus.com/count.js" async></script>
+</body>
+</html>

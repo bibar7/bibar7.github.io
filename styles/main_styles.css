@@ -1098,12 +1098,16 @@ font-variant: small-caps;
 }
 .intro_box_icon
 {
-	width: 41px;
-	height: 41px;
+	width: 65px;
+	height: 65px;
+	color: white;
+	font-size: 64px;
+
 }
-.intro_box_icon img
+.intro_box_icon i
 {
 	max-height: 100%;
+
 }
 .intro_box_title
 {
