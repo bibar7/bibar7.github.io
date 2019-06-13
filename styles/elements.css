@@ -26,13 +26,13 @@
 1. Fonts
 ***********/
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,800');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,800'); */
 
 /*********************************
 2. Body and some general stuff
 *********************************/
 
-*
+/* *
 {
 	margin: 0;
 	padding: 0;
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: 0;
 	color: #2c2c2c;
 	font-weight: 700;
-	text-transform: uppercase;
+font-variant: small-caps;
 	letter-spacing: 0.2em;
 }
 img
@@ -326,7 +326,7 @@ section
 	color: #ffffff;
 	letter-spacing: 0.075em;
 	line-height: 61px;
-	text-transform: uppercase;
+font-variant: small-caps;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -383,7 +383,7 @@ section
 	color: #190a49;
 	letter-spacing: 0.075em;
 	line-height: 61px;
-	text-transform: uppercase;
+font-variant: small-caps;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -403,7 +403,7 @@ section
 	font-size: 14px;
 	font-weight: 700;
 	color: #909090;
-	text-transform: uppercase;
+font-variant: small-caps;
 	letter-spacing: 0.2em;
 	line-height: 1.2;
 }
@@ -453,7 +453,7 @@ section
 	font-size: 14px;
 	font-weight: 700;
 	color: #ffffff;
-	text-transform: uppercase;
+	font-variant: small-caps;
 }
 .main_nav ul li a:hover,
 .main_nav ul li.active a
@@ -587,7 +587,7 @@ section
 	font-size: 12px;
 	font-weight: 700;
 	color: #ffffff;
-	text-transform: uppercase;
+	font-variant: small-caps;
 	letter-spacing: 0.2em;
 	cursor: pointer;
 	-webkit-transition: all 200ms ease;
@@ -609,7 +609,7 @@ section
 	font-size: 30px;
 	font-weight: 700;
 	color: #ffffff;
-	text-transform: uppercase;
+	font-variant: small-caps;
 	letter-spacing: 0.2em;
 }
 .menu_nav ul li a:hover
@@ -659,7 +659,7 @@ section
 	font-size: 60px;
 	font-weight: 700;
 	color: #ffffff;
-}
+} */
 
 /*********************************
 6. Elements
@@ -728,7 +728,7 @@ section
 	letter-spacing: 0.075em;
 	font-weight: 700;
 	line-height: 65px;
-	text-transform: uppercase;
+	font-variant: small-caps;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -833,7 +833,7 @@ section
 	color: #ffffff;
 	font-weight: 700;
 	line-height: 65px;
-	text-transform: uppercase;
+	font-variant: small-caps;
 	letter-spacing: 0.075em;
 	text-align: center;
 	cursor: pointer;
@@ -1112,7 +1112,7 @@ section
 	font-size: 16px;
 	font-weight: 700;
 	color: #ffffff;
-	text-transform: uppercase;
+	font-variant: small-caps;
 	letter-spacing: 0.2em;
 	line-height: 1.2;
 }
@@ -1129,5 +1129,5 @@ section
 	font-size: 14px;
 	font-weight: 700;
 	color: rgba(255,255,255,0.38);
-	text-transform: uppercase;
+	font-variant: small-caps;
 }

@@ -50,12 +50,13 @@
 		margin-left: 20px;
 
 	}
-	.main_nav ul li:not(:last-of-type)
+	.main_nav ul li.has_children:not(:last-of-type),
+	.main_nav ul li.nav_home_li
 	{
 		margin-right: 30px;
 	}
 
-	.main_nav ul li:last-of-type{
+	.main_nav ul li.has_children:last-of-type{
 		margin-left: 20px;
 
 	}
@@ -158,6 +159,30 @@
 @media only screen and (max-width: 1024px)
 {
 	
+	.main_nav ul li a
+{
+	font-size: 14px;
+}
+
+.main_nav > ul li > ul li.has_children > a::after
+{ font-size: 12px;
+}
+	[class^="flaticon2-"]:before, 
+[class*=" flaticon2-"]:before, 
+[class^="flaticon2-"]:after, 
+[class*=" flaticon2-"]:after {
+		font-family: flaticon2;
+		font-size: 1.9em !important;
+}
+
+[class^="flaticon1-"]:before, 
+[class*=" flaticon1-"]:before, 
+[class^="flaticon1-"]:after, 
+[class*=" flaticon1-"]:after {
+		font-family: flaticon1;
+		font-size: 1.9em !important;
+}
+
 }
 
 /************
@@ -186,6 +211,9 @@
 	{
 		padding-right: 25px;
 	}
+
+
+
 	.hamburger
 	{
 		display: block;
