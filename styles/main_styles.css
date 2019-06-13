@@ -531,12 +531,17 @@ font-variant: small-caps;
 font-variant: small-caps;
 }
 
-.main_nav > ul > li a:hover,
-.main_nav > ul > li.active a,
-.main_nav > ul > li > a:hover::after
+.main_nav > ul > li.active a
 {
 	color: #F53B9A;
 }
+
+.main_nav > ul > li a:hover,
+.main_nav > ul > li > a:hover::after
+{
+	color: #000000;
+}
+
 .main_nav ul li > ul
 {
 	position: absolute;
@@ -581,7 +586,7 @@ font-variant: small-caps;
 }
 .main_nav ul li > ul > li a:hover
 {
-	color: #5a80fb;
+	color: #000000;
 	font-weight: 600;
 }
 .main_nav > ul li > ul li.has_children > ul
@@ -1228,7 +1233,7 @@ br.tab {
 .quote
 {
 	font-family: 'corinthiaregular', 'Papyrus', fantasy;
-	background: #ffffff;
+	background: #5b44c4;
 	padding-bottom: 97px;
 }
 .quote_content
@@ -1238,17 +1243,18 @@ br.tab {
 }
 .quote_content p
 {
-	font-size: 36px;
-	font-weight: 300;
+	font-size: 3.5em; 
+	font-weight: 100;
 	font-style: italic;
-	color: #2c2c2c;
+	color: #ffffff;
 	line-height: 1.4444;
 }
 .quote_author
 {
-	font-size: 18px;
+	font-size: 2em;
+	font-family: 'Rome Regular', 'Century Gothic', 'Optima', sans-serif;
 	font-weight: 300;
-	color: #2c2c2c;
+	color: #ffffff;
 	margin-top: 42px;
 }
 
