@@ -127,8 +127,11 @@
 	}
 	.cta_image
 	{
-		width: 100%;
+		width: 80%;
 		height: 600px;
+		margin-left: auto;
+  margin-right: auto;
+  display: block;
 	}
 	.cta_content
 	{
@@ -358,17 +361,24 @@
 	}
 	.quote_content p
 	{
-		font-size: 20px;
+		font-size: 2em;
 	}
 	.quote_author
 	{
-		font-size: 14px;
+		font-size: 1.5em;
 		font-weight: 400;
 	}
 	.cta_content
 	{
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+
+	.cta_image
+	{
+		width: 100%;
+		height: 600px;
+	
 	}
 }
 
