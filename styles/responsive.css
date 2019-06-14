@@ -365,11 +365,11 @@
 	}
 	.quote_content p
 	{
-		font-size: 2em;
+		font-size: 4em;
 	}
 	.quote_author
 	{
-		font-size: 1.5em;
+		font-size: 3em;
 		font-weight: 400;
 	}
 	.cta_content
