@@ -1606,7 +1606,7 @@ br.tab {
 	width: 95px;
 	height: 95px;
 	border-radius: 50%;
-	background: #0f0432;
+	/* background: #0f0432; */
 }
 .footer_icon > div
 {
