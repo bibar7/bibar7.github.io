@@ -233,7 +233,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
 		font-weight: 300;
-		line-height: 1.75em;
+		line-height: 1.5em;
 		margin-bottom: 1em;
 	}
 h1, h2 {
@@ -1897,8 +1897,14 @@ h1, h2 {
 
 	/* Blog Cards */
 	
+	.card-row{
+		display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+	}
 	.card {
-		background: #481ba4;
+		
+   background: #481ba4;
 		box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 		/* padding-bottom: .75rem; */
 		width: 100%;
@@ -1927,7 +1933,7 @@ h1, h2 {
 
 	.card-text{
 		margin: 0;
-		height: 36vh;
+		height: auto;
 		color: rgb(198, 184, 221);
 	}
 
@@ -1937,7 +1943,7 @@ h1, h2 {
 	}
 	
 .card-footer {
-	height: 16vh;
+	width: auto;
 
 }
 .card-button {
@@ -2048,7 +2054,22 @@ margin-top: 2em;
 				display: block;
 				width: 100%;
 			}
+/* Video iFrame */
 
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
 /* Box */
 
@@ -2290,10 +2311,19 @@ margin-top: 2em;
 
 /* Interests */
 
+h2.section-title{
+margin: 0 auto 1em;	
+font-size: 2.5rem;
+}
+
 ul.interest {
-	padding: 30px 20px 20px 20px; 
+	/* padding: 30px 20px 20px 20px;  */
+	margin-bottom: 0;
 	text-align: center;
 }
+
+
+
 	.interest p {
 	  width: 100%;
 	  height: auto;
