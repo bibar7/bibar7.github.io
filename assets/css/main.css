@@ -2027,7 +2027,6 @@ margin-top: 2em;
 	}
 
 		.image:before {
-			background: url("images/overlay.png");
 			content: '';
 			height: 100%;
 			left: 0;
