@@ -182,8 +182,8 @@ width: 100%;
 
 
 .main-area .email-input-area .submit-btn{ font-family: shelby, cursive;  width: 120px; text-align: center; position: absolute; top: 5px; bottom: 5px; right: 5px; font-size: 1.9em;
-	border-radius: 40px; transition: all .3s; background: #6b28f9; color: #fff; -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,1); -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,1); 
-	box-shadow: 2px 2px 2px 0px rgba(0,0,0,1); text-shadow: 0.5px 0.5px 1px #000;}
+	border-radius: 40px; transition: all .3s; background: #6b28f9; color: #42d5ff; -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,1); -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,1); 
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,1); text-shadow: -0.5px -0.5px 0 #00000059, 0.5px -0.5px 0 #00000059, -0.5px 0.5px 0 #00000059, 1px 1px 0px #000;}}
 
 .main-area .email-input-area .submit-btn:hover{ background: #43049c; }
 
