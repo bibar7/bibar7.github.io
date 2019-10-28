@@ -154,6 +154,7 @@ html {
 
 .brand-icon img {
 width: 100%;
+
 }
 
 
@@ -184,10 +185,7 @@ width: 100%;
 
 
 .main-area .email-input-area .submit-btn{ text-transform: uppercase; width: 120px; text-align: center; position: absolute; top: 5px; bottom: 5px; right: 5px; font-size: 1em; font-weight: 600 !important; letter-spacing: 0.1em; 
-	border-radius: 40px; border: 2px black solid; transition: all .3s; background: #6633ff; color: #000; -webkit-box-shadow: 2px 2px 0px 0.25px rgba(0,0,0,0.75);
-	-moz-box-shadow: 2px 2px 0px 0.25px rgba(0,0,0,0.75);
-	box-shadow: 2px 2px 0px 0.25px rgba(0,0,0,0.75);
-	}
+	border-radius: 40px; border: 5px black solid; transition: all .3s; background: #672ee6; color: #000; }
 
 
 .main-area .email-input-area .submit-btn:hover{ background: #333399; }
