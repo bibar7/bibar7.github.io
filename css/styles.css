@@ -253,6 +253,9 @@ width: 100%;
 	/* ---------------------------------
 	1. PRIMARY STYLES
 	--------------------------------- */
+	body{
+		background-size: 150% 100%; 
+	}
 
 	p{ font-size: 1.5em; line-height: 1.4; }
 
