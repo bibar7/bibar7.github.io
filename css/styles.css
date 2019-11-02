@@ -69,11 +69,15 @@ h2,h3{font-family: 'Josefin Sans', sans-serif; letter-spacing: 0.05em; font-styl
 p{ line-height: 1; font-size: 1.1em; font-weight: 300; 
 	letter-spacing: 0.05em;
 	color: #fff !important; 	
+}
+
+p, h3 {
 	text-shadow:
 	-0.9px -0.9px 0 #00000059,  
 	 0.9px -0.9px 0 #00000059,
 	 -0.9px 0.9px 0 #00000059,
 	  1.5px 1.5px 0px #000;}
+
 
 h2{ font-size: 4.5em; font-weight: 300; line-height: 1; color: #00A6E2; 	
 	text-shadow:
