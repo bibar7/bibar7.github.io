@@ -1,0 +1,769 @@
+/*  1. Document Styles
+    2. Navbar
+    3. Profile Card
+    4. Intro Article
+    5. Projects Gallery
+    6. Contact Section
+    7. Footer
+    8. Responsive Media Queries
+   */
+
+   @import "@material/chips/mdc-chips";
+
+
+/* Document Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body, 
+.page-content-wrapper {
+  min-height: 100% !important;
+}
+
+html {
+  /* background-image: url('../images/frosted.jpg');  */
+  /* background-repeat: no-repeat; center center fixed; */
+  /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+  /* background-size: cover; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+background-color: #000;
+  text-align:left;
+  margin:auto;
+  padding:0;
+  font-family: le-havre, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+}
+
+.page-content-wrapper {
+  min-width: 90vw;
+  margin-left: 10%;
+ 
+}
+
+.site-section {
+  padding: 5em 0;
+}
+
+.site-footer {
+  min-height: 350px;
+  padding: 3em 0 0 !important;
+}
+
+button{
+  font-family: le-havre, sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+button:focus {
+outline: none !important;
+
+}
+
+button > a:focus,
+button > a:hover,
+button > a {
+  text-decoration: none;
+}
+
+.btn {
+border-radius: 2px;
+border: 0;
+transition: .2s ease-out;
+color: #fff;
+margin: 6px;
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn:hover {
+color: #fff;
+box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:active, .btn:focus, .btn.active {
+outline: 0;
+color: #fff;
+}
+
+.center-frame {
+text-align: center;
+}
+
+.img-frame {
+  display: flex;
+overflow: hidden;
+position: relative;
+max-width: 50vw;
+}
+
+.img-frame a img {
+  width: 100%;
+}
+
+
+.section-title {
+  font-family: 'grafolita-script', cursive;
+font-weight:800;
+text-shadow:
+-0.25px -0.25px 0 #000,  
+ 0.25px -0.25px 0 #000,
+ -0.25px 0.25px 0 #000,
+  0.25px 0.25px 0 #000;
+}
+
+
+
+/* Side Vertical Navbar */
+
+.navbar {
+  -ms-flex-align: left;
+  align-items: left;
+  padding: 0;
+}
+
+#sidebar-wrapper {
+  position: fixed;
+height: 100%;
+  width: 8vw;
+  background-color: #2a1b3d !important;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+ul.section-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+
+a.nav-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: #2a1b3d !important;
+}
+
+span.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+i.ion-md-menu {
+  font-size: 26px;
+  color: white;
+}
+
+.nav-icon {
+  font-size: 28px;
+}
+
+.brand-name {
+  max-width: 6em;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-name img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  bottom: 0 !important;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  /* margin-left: 20%; */
+  /* margin-right: auto; */
+  overflow: hidden;
+}
+
+.logo img {
+  max-width: 70%;
+  height: auto;
+}
+
+.hidden-text {
+  display: none;
+}
+
+a.nav-link:hover {
+  color: #ff3eb5;
+}
+
+a.nav-link:hover > p.hidden-text {
+  display: block;
+  max-width: 100%;
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.navbar-expand-lg .navbar-nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+
+/* Profile Card */
+
+.card{
+  background-color: #6666cc;
+  background-image: url("../images/bv-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.profile-card {
+max-width: 95vw;
+line-height: 1.1;
+padding: 0;
+margin-left: auto !important;
+margin-right: auto !important;
+margin-bottom: 0 !important;
+margin-top: 0 !important;
+background-color: #2a1b3dc8;
+color: white;
+
+}
+
+/* .profile-card h3 {
+  font-size: 2.25rem;
+  font-weight: 800;
+} */
+.profile-card h6 {
+  font-size: 1.1rem;
+}
+
+.profile-picture {
+  display: block;
+  position: relative;
+  background-image: url("../images/IMG_3476.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+border: 5px solid #2a1b3d;
+background-color: #6666cc;
+height: 100%;
+width: 100%;
+}
+
+
+
+
+.card-title {
+  font-family: 'grafolita-script', cursive;
+font-size: 2.3em !important;
+font-weight: 400;
+}
+
+span.first-name{
+color: #8A69D4;
+}
+
+span.last-name{
+  color: rgb(188, 206, 212);
+}
+span.business-name{
+  font-family: 'grafolita-script', cursive;
+text-shadow:
+-0.85px -0.85px 0 #000,  
+ 0.85px -0.85px 0 #000,
+ -0.85px 0.85px 0 #000,
+  0.85px 0.85px 0 #000;
+}
+
+.card-title img {
+  display: inline-block;
+  max-width: 7.5vw;
+  margin-bottom: 2vh;
+}
+.profile-icon{
+  font-size: 1.1em;
+  margin-right: 0.5vw;
+  margin-bottom: 1vh;
+}
+
+.card-text {
+  font-size: 0.95em;
+  font-weight: 300;
+
+}
+
+i.dev-tools-icon {
+  display: inline-block;
+  font-size: 1.8em;
+  margin-right: 3vw;
+  color: #0344FF;
+
+}
+
+.dev-tools {
+text-align: center;
+}
+
+.btn-profile-card {
+background-color: #ff3eb5;
+}
+
+.btn-profile-card a {
+  color: #fff !important;
+}
+.btn-profile-card:hover, .btn-profile-card a:hover, .btn-profile-card:focus, .btn-profile-card a:focus {
+background-color: #8A69D4 !important;
+color: #000 !important;
+}
+
+
+.btn-profile-card.active {
+background-color: #8A69D4 !important;
+}
+.btn-profile-card.active:hover {
+color: #8A69D4;
+}
+.btn-profile-card.active:focus {
+color: #8A69D4;
+}
+
+
+
+/* Intro Article */
+
+
+#about-bellevisite > h2.section-title {
+  font-size: 2em !important;
+  color: #EA27C2;
+
+}
+
+.about-img {
+  display: block;
+  position: relative;
+  background-image: url("../images/responsive-devices.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+width: 40vw;
+height: auto;
+
+}
+
+.about-img-frame {
+  display: flex;
+overflow: hidden;
+position: relative;
+width: 40vw;
+height: 52vh;
+background-color: #0344FF;
+margin-top: 15%;
+border: 5px solid #2a1b3d;
+
+
+}
+
+#about-bellevisite p {
+  color: white;
+  font-weight: 300;
+  font-size: 1.15em;
+}
+
+/* Projects */
+
+
+
+.img-portfolio {
+  margin-bottom: 30px;
+}
+
+.img-hover:hover {
+  opacity: 0.8;
+}
+
+#barber-portfolio-projects p {
+  color: white;
+  font-weight: 400;
+}
+
+.btn-primary {
+  background: #0344FF;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #8A69D4 !important;
+}
+
+.btn-primary.active {
+  background-color: #8A69D4 !important;
+}
+
+
+
+/* Contact Section */
+
+.business-card {
+  background-color: #323232;
+  width: 550px;
+  height: 325px;
+  margin: -8%;
+  text-align: center
+}
+
+.bc-grid-wrapper {
+display: inline-block;
+width: 90%;
+height: 90%;
+}
+.bc-info-grid {
+  display: grid;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; */
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 3px;
+  grid-template-areas: 
+  a a a b b b
+  c c c b b b
+  d d d d d d
+  e e e e e e
+  f f f f f f
+  g g g g g g;
+  background-color: rgba(255, 255, 255, 0.363);
+  }
+
+  #bellevisite-contact-gigi .company {
+grid-area: a;
+font-family: grafolita-script, sans-serif;
+
+  }
+
+  #bellevisite-contact-gigi .company-logo{
+    grid-area: b;
+    width: 100%
+  }
+
+  .company-logo img {
+max-width: 100%
+  }
+
+  #bellevisite-contact-gigi .name {
+grid-area: c;
+  }
+
+  #bellevisite-contact-gigi .email {
+    grid-area: d;
+
+  }
+
+  #bellevisite-contact-gigi .mobile {
+    grid-area: e;
+
+  }
+
+  #bellevisite-contact-gigi .location {
+    grid-area: f;
+
+  }
+
+  #bellevisite-contact-gigi .social {
+    grid-area: g;
+
+  }
+
+
+
+/* Footer */
+
+
+footer {
+  max-height: 20vh;
+}
+
+
+
+
+
+
+
+/* Responsive Media Queries */
+
+@media screen and (min-width: 1040px) {
+  .profile-card {
+    max-width: 65vw;
+}
+
+}
+
+
+@media screen and (max-width: 992px) {
+  nav {
+    min-width: 5rem !important;
+  }
+
+  .bg-light {
+    left: 0 !important;
+    position: absolute;
+  }
+
+  .logo {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10%; 
+  text-align: center;
+  }
+
+  .logo img {
+    /* margin-top: 65vh !important; */
+    max-width: 90%;
+    height: auto;
+
+  }
+
+  .dev-tools-icon {
+    font-size: 1.8em;
+    margin-right: 3vw;
+  }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+  .profile-card {
+    max-width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+    font-size: 0.9em;
+  }
+
+  
+  .card-title {
+    font-size: 2.6em;
+      }
+
+      .card-title img {
+        max-width: 12vw;
+      }
+
+ .business-card {
+  width: 400px;
+  height: 235px;
+ }
+
+}
+/* 
+@media screen and (min-width: 851px) and (max-width: 992px){
+  div.profile-picture img {
+    min-width: 39vw !important;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 850px){
+  div.profile-picture img {
+    min-width: 44vw !important;
+  }
+} */
+
+
+@media screen and (min-width: 768px) {
+  
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  .page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #sidebar-wrapper {
+    width: 12vw;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+#bellevisite-barber-profile.container {
+  width: 80vw !important;
+}
+  .profile-card {
+    max-width: 60vw;
+    line-height: 1.2;
+    font-size: 1em;
+    margin-top: -5vh !important;
+  }
+
+  .profile-picture {
+width: 60vw;
+height: 65vh;
+  }
+
+  .about-img-frame {
+    width:70vw;
+    height: 37vh;
+    margin-top: 0;
+  }
+
+  .about-img {
+    width:70vw;
+    height:auto;
+  }
+
+  .card-title {
+    font-size: 2.2em !important;
+    letter-spacing: 0;
+  }
+
+  .card-title img {
+    margin-bottom: 2vh;
+    max-width: 14vw;
+  }
+
+
+  .img-portfolio {
+    margin-bottom: 15px;
+
+}
+
+}
+
+@media screen and (max-width: 700px){
+  .img-frame {
+    max-width: 80vw;
+  }
+
+  .profile-card {
+    max-width: 60vw;
+    line-height: 1.25;
+
+  }
+
+
+
+ 
+}
+
+@media screen and (max-width: 576px){
+  a.nav-link:hover > p.hidden-text {
+    font-size: 0.6rem;
+  }
+
+  .profile-picture {
+    height: 50vh;
+      }
+
+  .card-title {
+font-size: 1.7em !important;
+  }
+
+  .card-body {
+    padding: 1em !important;
+  }
+
+  .business-card{
+  width: 300px;
+  height: 175px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+
+  .profile-card {
+    margin-left: 10% !important;
+    margin-right: auto;
+  }
+}
+
+
+@media screen and (max-width: 375px){
+
+  .page-content-wrapper{
+    margin-left: 15%;
+
+  }
+  #sidebar-wrapper {
+    width: 15vw;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+ 
+  .img-frame {
+    max-width: 85vw;
+  }
+  .profile-card {
+    max-width: 65vw;
+    margin-left: 3% !important;
+    margin-right: auto;
+  }
+
+  
+
+  .profile-picture  {
+    min-width: 65vw;
+  }
+
+  .card-title img {
+    max-width: 20vw !important;
+    margin-bottom: 1.5vh;
+  }
+
+  .business-card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+
+
+
+
