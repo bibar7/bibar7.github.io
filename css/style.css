@@ -765,5 +765,7 @@ font-size: 1.7em !important;
 }
 
 
-
+input {
+  width: 30vw !important;
+}
 
