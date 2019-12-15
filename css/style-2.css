@@ -85,7 +85,7 @@ h6{
 
 }
 
-a {color: #0344FF ;}
+a {color: #ff00cc;}
 a:hover{color: #741EE8}
 
 .container-fluid {
@@ -160,28 +160,14 @@ color: #000;
 text-align: center;
 }
 
-.img-frame, .form-img-frame {
+.img-frame  {
 overflow: hidden;
 position: relative;
-}
-
-.img-frame{
   display: flex;
   max-width: 50vw;
 }
 
-.form-img-frame {
-  margin-bottom: -3rem;
-width: 640px;
-}
 
-.form-img-frame img{
-  /* display: block; */
-  /* width: 640px; 
-  height: 215px; */
-  width: 100%;
-
-}
 
 
 .img-frame-border {
@@ -464,7 +450,7 @@ a.nav-link:hover > .hidden-text {
 #bellevisite-barber-profile .card{
   max-width: 850px;
   background-color: #6b5b83;
-  background-image: url("../images/bc-brick-bg-2.jpeg");
+  background-image: url("../images/brick-bg-2.jpeg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -619,7 +605,7 @@ color: #741EE8;
 
 #about-bellevisite .container-bg {
   background-color: #001b69;
-  background-image: url("../images/1020682_d2.jpg");
+  background-image: url("../images/brick-bg-1.jpeg");
 background-size: cover;
 /* background-repeat: no-repeat; */
 }
@@ -638,6 +624,8 @@ padding-bottom: 2%;
     margin-right: auto;
     margin-left: auto;
 }
+
+
 
 
 /* .about-img-frame {
@@ -726,7 +714,7 @@ h4.project-title{
   height: 16.5em !important;
   display: flex;
 
-        background-image: url('../images/bc-brick-bg.jpeg');
+        background-image: url('../images/brick-bg-3.jpeg');
         background-size: 100% 100%;
         border-radius: 5%;
 
@@ -908,6 +896,54 @@ grid-area: c;
   }
 
 
+  /* Form */
+  div.form-container {
+    width: 640px; 
+    height: 3915px; 
+    /* margin-right: auto !important; */
+  
+  
+    /* margin-left: auto !important;
+    margin-right: auto !important; */
+  
+  }
+
+  .form-container, .form-img-container {
+    max-width: 80vw !important;
+  }
+  
+  iframe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form-img-frame {  
+    display: flex;
+    width: 600px;
+    height: 315px;
+  
+  background-image: url("../images/296643810.jpeg");/* position: relative; */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+    margin-bottom: -3rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+   
+  }
+  
+  .form-img-frame img{
+    /* display: block; */
+   
+    max-width: 100%;
+  
+  }
+
+  @media screen and (max-width: 576px){
+
+  }
+  
 
 /* Footer */
 
@@ -967,10 +1003,7 @@ footer {
   
   }
 
-  /* .toggler-right {
-    margin-right: -1em !important;
-    margin-bottom: 2vw !important;
-  } */
+ 
 
   .bg-light {
     left: 0 !important;
@@ -1027,29 +1060,7 @@ font-size: 1rem !important;
       
       }
 
-      .progress {
-        /* margin-bottom: 3.5vh; */
-      }
-/* 
- .business-card {
-  width: 400px;
-  height: 235px;
- } */
 
-}
-/* 
-@media screen and (min-width: 851px) and (max-width: 992px){
-  div.profile-picture img {
-    min-width: 39vw !important;
-  }
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 850px){
-  div.profile-picture img {
-    min-width: 44vw !important;
-  }
-} */
 
 
 @media screen and (min-width: 768px) {
@@ -1226,10 +1237,7 @@ width: 50% !important;
     max-height: 120px;
     }
 
-    /* .dev-tools-icon {
-      margin-right: 0 !important;
-      margin-left: 15% !important;
-    } */
+   
 }
 
 
@@ -1350,3 +1358,5 @@ textarea {
   
   }
 }
+
+/*Form */
