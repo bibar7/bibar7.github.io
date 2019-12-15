@@ -50,18 +50,21 @@ html {
 }
 
 body {
-background-color: #1c1c1c;
+background-color: #262626;
+/* background-image: url("../images/dark_color_brick_04.jpg");
+background-size: contain; */
   text-align:left;
   margin:auto;
   padding:0;
+  font-size: 17px;
   font-family: nobel, sans-serif;
-  font-size: 18px;
   font-weight: 300;
   color: white;
 }
 
+
 h1{
-  font-size: 4.2rem !important;
+  font-size: 4rem !important;
 }
 h2{
   font-size: 1.7rem !important;
@@ -82,8 +85,8 @@ h6{
 
 }
 
-a {color: #741EE8;}
-a:hover{color: #0344FF}
+a {color: #0344FF ;}
+a:hover{color: #741EE8}
 
 .container-fluid {
   padding: 0 !important;
@@ -100,7 +103,7 @@ a:hover{color: #0344FF}
 }
 
 .site-footer {
-  min-height: 350px;
+  min-height: 150px;
   padding: 3em 0 0 !important;
 }
 
@@ -157,12 +160,29 @@ color: #000;
 text-align: center;
 }
 
-.img-frame {
-  display: flex;
+.img-frame, .form-img-frame {
 overflow: hidden;
 position: relative;
-max-width: 50vw;
 }
+
+.img-frame{
+  display: flex;
+  max-width: 50vw;
+}
+
+.form-img-frame {
+  margin-bottom: -3rem;
+width: 640px;
+}
+
+.form-img-frame img{
+  /* display: block; */
+  /* width: 640px; 
+  height: 215px; */
+  width: 100%;
+
+}
+
 
 .img-frame-border {
   border: 3px solid white;
@@ -179,10 +199,10 @@ max-width: 50vw;
   font-family: 'grafolita-script', cursive;
 font-weight:800;
 text-shadow:
--0.25px -0.25px 0 #000,  
- 0.25px -0.25px 0 #000,
- -0.25px 0.25px 0 #000,
-  0.25px 0.25px 0 #000;
+-0.85px -0.85px 0 #000,  
+ 0.85px -0.85px 0 #000,
+ -0.85px 0.85px 0 #000,
+  0.85px 0.85px 0 #000;
   color: #FF29E4;
 }
 
@@ -195,11 +215,25 @@ span.first-name{
     }
     span.business-name{
       font-family: 'grafolita-script', cursive;
+      font-size: 1.25em;
+      font-weight: 800;
+
     text-shadow:
-    -0.85px -0.85px 0 #000,  
-     0.85px -0.85px 0 #000,
-     -0.85px 0.85px 0 #000,
-      0.85px 0.85px 0 #000;
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+    }
+
+    span.business-name.text{
+      font-family: 'grafolita-script', cursive;
+      font-size: 1.25em;
+      font-weight: 800;
+    text-shadow:
+    -0.65px -0.65px 0 #000,  
+    0.65px -0.65px 0 #000,
+    -0.65px 0.65px 0 #000,
+     0.65px 0.65px 0 #000;
     }
 
 /* Header */
@@ -226,7 +260,14 @@ header#gigi-presents-bellevisite {
 }
 
 .text-wrapper {
-    margin-top: 20vh;
+margin-top: 15% !important;
+}
+
+@media screen and (max-width: 576px){
+  .text-wrapper{
+    margin-top: 20% !important;
+
+  }
 }
 
 .header-emp {
@@ -251,29 +292,30 @@ header i {
 
 }
 
-.contain-enter{
-  width: 100%;
+a.enter {
+  display: inline-block;
+overflow: hidden;
+position: relative; 
+margin-right: auto;
+margin-left: auto;
+padding: 0 !important;    
+
+/* margin-top: 6vh; */
+/* margin-left: -18% !important; */
+}
+
+a.enter img {
     padding: 0 !important;    
     margin-right: auto;
     margin-left: auto;
 }
 
 
-a.enter {
-width: 150px;
-  height: 75px;
-  display: flex;
-overflow: hidden;
-position: relative; 
-max-width: 18vw; 
-margin-top: 6vh;
-margin-left: -18% !important;
-}
+
 
 a.enter img{
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+ 
 }
 
 /* Middle Navbar */
@@ -288,7 +330,7 @@ nav {
 ul.nav {
   background-color: #3a3848;
   flex-direction: row;
-  min-width: 30vw;
+  min-width: 35vw;
   height: 9vh  !important;
 
   right: 0;
@@ -420,6 +462,7 @@ a.nav-link:hover > .hidden-text {
 /* Profile Card */
 
 #bellevisite-barber-profile .card{
+  max-width: 850px;
   background-color: #6b5b83;
   background-image: url("../images/bc-brick-bg-2.jpeg");
   background-position: center center;
@@ -431,7 +474,7 @@ margin-right: auto !important;
 }
 
 .profile-card {
-max-width: 95vw;
+/* max-width: 95vw; */
 line-height: 1.1;
 padding: 0;
 margin-left: auto !important;
@@ -458,7 +501,7 @@ color: white;
   background-size: cover;
   background-repeat: no-repeat;
 background-color: #0344FF;
-height: 100%;
+max-height: 100%;
 width: 100%;
 /* border-right: 3px solid #ffffff80;  */
 }
@@ -481,8 +524,8 @@ margin-bottom: 0 !important;
   margin-bottom: 2vh;
 }
 .profile-icon{
-  font-size: 1.1em;
-  margin-right: 0.5vw;
+  font-size: 1em;
+  /* margin-right: 0.5vw; */
   /* margin-bottom: 1vh; */
 }
 
@@ -574,22 +617,36 @@ color: #741EE8;
 
 /* Intro Article */
 
-
+#about-bellevisite .container-bg {
+  background-color: #001b69;
+  background-image: url("../images/1020682_d2.jpg");
+background-size: cover;
+/* background-repeat: no-repeat; */
+}
 #about-bellevisite > h2.section-title {
   font-size: 2em !important;
   color: #ff00cc;
 
 }
 
+.article-container, .chip-container {
+  width: 100%;
+    padding-top: 8%; 
+    padding-left: 5%;
+padding-right: 5%;
+padding-bottom: 2%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
-.about-img-frame {
+
+/* .about-img-frame {
   display: flex;
 overflow: hidden;
 position: relative;
 width: 40vw;
-height: 52vh;
+height: 60vh;
 background-color: #741EE8;
-margin-top: 15%;
 
 }
 
@@ -603,15 +660,20 @@ margin-top: 15%;
 width: 40vw;
 height: auto;
 
-}
+} */
 
 #about-bellevisite p {
   color: white;
   font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.2 !important;
 }
 
+#about-bellevisite p a {
+  font-weight: 600 !important;}
+
 .mdc-chip {
-  background-color: #741EE8;
+  background-color: #0344FF;
 margin: 3px 1px;
 }
 
@@ -625,9 +687,7 @@ font-size: 0.8em;
 /* Projects */
 
 
-h3.section-title {
-  color: #741EE8;
-}
+
 
 h4.project-title{
   color: #0344FF;
@@ -663,11 +723,12 @@ h4.project-title{
 .business-card {
   /* position: relative; */
   width: 32em !important;
-  height: 19em !important;
+  height: 16.5em !important;
   display: flex;
 
         background-image: url('../images/bc-brick-bg.jpeg');
         background-size: 100% 100%;
+        border-radius: 5%;
 
         
   /* 
@@ -686,8 +747,9 @@ margin-right: auto !important; */
   padding-left: 0 !important;
   margin-right: auto;
   margin-left: auto;
-
 }
+
+
 
 .bc-content {
   display: block;
@@ -718,6 +780,7 @@ h5.job-title {
 top: 60%;
 letter-spacing: 0.15em;
 font-style: italic;
+line-height: 1 !important;
 
 }
 .card-image {
@@ -725,15 +788,14 @@ font-style: italic;
 
 }
 .bc-contact {
-  margin-top: 0.8rem !important;
+  margin-top: 0.25rem !important;
 top: 80%;
 margin-left: 5%;
 
 }
 
 .contact-info{
-  font-size: 12px;
-text-align: left;
+  font-size: 0.6rem !important;
 
 }
 .contact-info a{
@@ -750,8 +812,8 @@ text-align: left;
 
 
 @media screen and (min-width: 1000px) {
-  html {
-    font-size: 18px;
+  body {
+    font-size: 17px;
   }
 }
 
@@ -766,6 +828,11 @@ display: inline-block;
 
 .no-padding {
   padding: 0 !important;
+}
+
+.no-margin
+{
+  margin: 0 !important;
 }
 
 .logo img {
@@ -846,7 +913,7 @@ grid-area: c;
 
 
 footer {
-  height: 100px !important;
+  height: 50px !important;
   background-color: #3a3848;
 }
 
@@ -1170,8 +1237,9 @@ width: 50% !important;
 @media screen and (min-width: 375px) and (max-width: 767px){
 
   .profile-card {
-    margin-left: 10% !important;
-    margin-right: auto;
+      max-width: 60vw !important;
+    /* margin-left: 10% !important; */
+    /* margin-right: auto; */
   }
 }
 @media screen and (max-width: 427px){
@@ -1202,16 +1270,23 @@ width: 50% !important;
 @media screen and (max-width: 375px){
 
   #gigi-presents-bellevisite h1 {
-    font-size: 2.9em !important;
+    font-size: 2.5em !important;
 }
 
 header#gigi-presents-bellevisite {
-  font-size: 1.2em !important;
+  font-size: 1em !important;
 }
 
 #gigi-presents-bellevisite .text-wrapper {
   margin-top: 22vh !important;
 }
+
+a.enter {
+  margin-top: 2rem
+
+}
+
+
 
 header i {
   margin-top: 25vh !important;
@@ -1229,9 +1304,8 @@ padding: 5%;
     margin-right: -5% !important;
   }
   .profile-card {
-    max-width: 65vw;
-    margin-left: 3% !important;
-    margin-right: auto;
+    max-width: 80vw !important;
+margin-left: -5% !important;
   }
 
   .progress{
@@ -1242,7 +1316,7 @@ padding: 5%;
   }
 
   .profile-picture  {
-    min-width: 65vw;
+    min-width: 70vw;
   }
 
 
@@ -1270,4 +1344,9 @@ textarea {
 }
 
 
-
+@media screen and (max-width: 430px){
+  .contact-info{
+    font-size: 0.55rem !important;
+  
+  }
+}
