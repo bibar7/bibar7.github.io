@@ -975,24 +975,39 @@ grid-area: c;
 
   /* Form */
   div.form-container {
-    width: 700px; 
+    overflow: hidden;
+    width: 95vw; 
     height: 3915px; 
 
   
   }
 
-  .form-container, .form-img-container {
-    max-width: 80vw !important;
-  }
   
-  iframe {
+  .form-img-container {
+    max-width: 90vw !important;
+  }
+  @media screen and (min-width: 991px){
+    .form-img-container {
+      max-width: 65vw !important;
+    }
+  }
+
+
+
+
+
+iframe {
+  width: 100% !important;
+}
+  
+  /* iframe {
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
   
   .form-img-frame {  
     display: flex;
-    width: 600px;
+    width: 100%;
     height: 315px;
   
   background-image: url("../images/296643810.jpeg");/* position: relative; */
