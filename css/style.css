@@ -476,7 +476,7 @@ visibility: hidden;
   color: #fff;
   }
   
- a.nav-link:hover, .collapse.show ul.nav a.nav-link:hover > p.hidden-text {
+ a.nav-link:hover, .collapse.show ul.nav a.nav-link:hover > p.hidden-text, a.active {
       color: #ff00cc;
 
   }
@@ -500,7 +500,7 @@ a.nav-link:hover > p.hidden-text {
 
 #gigi-profile-card{
   display: flex !important;
-  max-width: 60vw !important;
+  max-width: 70vw !important;
   
 margin-left: auto !important;
 margin-right: auto !important;
