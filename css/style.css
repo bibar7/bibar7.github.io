@@ -239,12 +239,15 @@ header#gigi-presents-bellevisite {
       -moz-background-size: cover;
       -o-background-size: cover; 
     background-size: 100% 100%; 
+    background-repeat: no-repeat;
     height: 100vh;
     min-width: 100vw;
     font-size: 1.4em;
     font-weight: 300;
     text-align: center;
 }
+
+
 
 #gigi-presents-bellevisite p {
   color: #ff33cc;
@@ -254,13 +257,58 @@ header#gigi-presents-bellevisite {
 }
 
 .text-wrapper {
-margin-top: 15% !important;
+margin-top: 11vh !important;
 }
 
 @media screen and (max-width: 768px){
   .text-wrapper{
-    margin-top: 45% !important;
+    margin-top: 12vh !important;
 
+  }
+}
+
+@media screen and (max-width: 390px){
+  .text-wrapper{
+    margin-top: 17vh !important;
+
+  }
+
+  h1 {
+font-size: 2.3em !important;
+  }
+
+  #gigi-presents-bellevisite p {
+    font-size: 0.85em !important;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .text-wrapper{
+    margin-top: 17vh !important;
+
+  }
+
+  h1 {
+font-size: 5em !important;
+  }
+
+  #gigi-presents-bellevisite p {
+    font-size: 1.1em !important;
+  }
+}
+
+@media screen and (min-width: 2000px){
+  .text-wrapper{
+    margin-top: 20vh !important;
+
+  }
+
+  h1 {
+font-size: 7em !important;
+  }
+
+  #gigi-presents-bellevisite p {
+    font-size: 2em !important;
   }
 }
 
