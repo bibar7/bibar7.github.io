@@ -457,7 +457,7 @@ a.nav-link:hover > .hidden-text {
 
 #gigi-profile-card{
   display: flex !important;
-  max-width: 90vw !important;
+  max-width: 60vw !important;
   
 margin-left: auto !important;
 margin-right: auto !important;
@@ -547,9 +547,6 @@ overflow: hidden;
 }
 
 
-.biaggi-pic {
- 
-}
 
 .card-title {
   font-family: 'grafolita-script', cursive;
