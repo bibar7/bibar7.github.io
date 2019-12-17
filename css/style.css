@@ -540,7 +540,7 @@ div.dev-skills > div.container {
 
 @media screen and (min-width: 951px){
  .card{
-    max-width: 90vw !important;
+    max-width: 80vw !important;
   }
 
   div.dev-skills > div.container {
@@ -550,7 +550,7 @@ margin-top: 1.5rem !important;
 
 @media screen and (max-width: 950px){
   .card{
-     max-width: 100vw !important;
+     max-width: 105vw !important;
    }
   
    div.dev-skills > div.container {
