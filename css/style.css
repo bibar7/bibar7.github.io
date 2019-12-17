@@ -498,9 +498,8 @@ a.nav-link:hover > p.hidden-text {
 
 /* Profile Card */
 
-#gigi-profile-card{
+.card{
   display: flex !important;
-  max-width: 80vw !important;
   
 margin-left: auto !important;
 margin-right: auto !important;
@@ -535,6 +534,29 @@ color: white;
   overflow: hidden;
 }
 
+div.dev-skills > div.container {
+  margin-top: -0.5rem !important;
+    }
+
+@media screen and (min-width: 951px){
+ .card{
+    max-width: 90vw !important;
+  }
+
+  div.dev-skills > div.container {
+margin-top: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .card{
+     max-width: 100vw !important;
+   }
+  
+   div.dev-skills > div.container {
+    margin-top: 0.5rem !important;
+      }
+ }
 
 @media screen and (max-width: 767px){
   #gigi-profile-card{
@@ -560,6 +582,7 @@ color: white;
     max-width: 95vw !important;
   }
 }
+
 
 #gigi-profile-card h6 {
   font-size: 0.8em;
