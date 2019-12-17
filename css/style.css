@@ -66,6 +66,12 @@ background-size: contain; */
 h1{
   font-size: 4rem !important;
 }
+
+@media screen and (max-width: 768px){
+  h1{ font-size: 2.4rem !important;}
+
+ }
+
 h2{
   font-size: 1.7rem !important;
 }
@@ -161,11 +167,13 @@ text-align: center;
 }
 
 .img-frame  {
+  display: flex;
 overflow: hidden;
 position: relative;
-  display: flex;
-  max-width: 50vw;
+  /* max-width: 50vw; */
 }
+
+
 
 
 
@@ -249,9 +257,9 @@ header#gigi-presents-bellevisite {
 margin-top: 15% !important;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
   .text-wrapper{
-    margin-top: 20% !important;
+    margin-top: 45% !important;
 
   }
 }
@@ -447,53 +455,101 @@ a.nav-link:hover > .hidden-text {
 
 /* Profile Card */
 
-#bellevisite-barber-profile .card{
-  max-width: 850px;
-  background-color: #6b5b83;
-  background-image: url("../images/brick-bg-2.jpeg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px solid #fff;
+#gigi-profile-card{
+  display: flex !important;
+  max-width: 90vw !important;
+  
 margin-left: auto !important;
 margin-right: auto !important;
-}
-
-.profile-card {
-/* max-width: 95vw; */
-line-height: 1.1;
+/* margin-bottom: 0 !important;
+margin-top: 0 !important; */
 padding: 0;
-margin-left: auto !important;
-margin-right: auto !important;
-margin-bottom: 0 !important;
-margin-top: 0 !important;
-background-color: #2a1b3dc8;
+line-height: 1.1;
 color: white;
 }
 
-/* .profile-card h3 {
-  font-size: 2.25rem;
-  font-weight: 800;
+
+#gigi-profile-card .wrapper {
+  /* height: 100% !important; */
+  /* max-height: 72vh !important;   */
+
+  display: flex;
+  border: 2px solid #fff;
+  background-color: #6b5b83;
+  background-image: url("../images/brick-bg-2.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+/* 
+#gigi-profile-card img{
+  height: 100% !important;
+  width: auto;
 } */
-.profile-card h6 {
+
+#gigi-profile-card .container {
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 767px){
+  #gigi-profile-card{
+    max-width: 45vw !important;
+  }
+}
+
+
+@media screen and (max-width: 636px){
+  #gigi-profile-card{
+    max-width: 60vw !important;
+  }
+}
+
+@media screen and (max-width: 477px){
+  #gigi-profile-card{
+    max-width: 80vw !important;
+  }
+}
+
+@media screen and (max-width: 355px){
+  #gigi-profile-card{
+    max-width: 95vw !important;
+  }
+}
+
+#gigi-profile-card h6 {
   font-size: 0.8em;
 }
 
+#gigi-profile-card .card-body {
+padding: 0.9rem !important;
+}
+
+/* #bellevisite-barber-profile .img-frame {
+  display: flex !important;
+  max-width: 35vw !important;
+  max-height: 70vh !important;
+} */
+
 .profile-picture {
-  display: block;
-  position: relative;
+  /* display: flex; */
+  height: 100%;
+overflow: hidden;
+  background-color: #0344FF;
   background-image: url("../images/IMG_3476.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-background-color: #0344FF;
-max-height: 100%;
-width: 100%;
+
+
 /* border-right: 3px solid #ffffff80;  */
 }
 
 
-
+.biaggi-pic {
+ 
+}
 
 .card-title {
   font-family: 'grafolita-script', cursive;
@@ -607,6 +663,7 @@ color: #741EE8;
   background-color: #001b69;
   background-image: url("../images/brick-bg-1.jpeg");
 background-size: cover;
+background-position: center center;
 /* background-repeat: no-repeat; */
 }
 #about-bellevisite > h2.section-title {
@@ -692,6 +749,19 @@ h4.project-title{
   color: white;
 }
 
+#barber-portfolio-projects .img-frame {
+  max-width: 100vw !important;
+}
+
+.project-text {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 80vw !important;
+  padding: 0 !important;
+
+}
+
+  #gigi-profile-card
 .btn-primary {
   background: #2C69FF;
 }
@@ -729,13 +799,22 @@ margin-right: auto !important; */
 /* overflow: hidden; */
 }
 
-.contact-container{
-  width: 100%;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-  margin-right: auto;
-  margin-left: auto;
+@media screen and (max-width: 576px){
+  .business-card {
+    width: 95vw !important;
+    max-height: 40vh !important;
+  }
 }
+
+@media screen and (max-width: 500px){
+  .business-card {
+    width: 100vw !important;
+    max-height: 37vh !important;
+  }
+
+}
+
+
 
 
 
@@ -751,8 +830,18 @@ margin-right: auto !important; */
   z-index: 100; */
 }
 
+
+
+
 .logo {
   top: 5%;
+  width: 32vw !important;
+  height: auto;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
 }
 h3.name {
   font-size: 34px !important;
@@ -775,11 +864,35 @@ line-height: 1 !important;
   background-color: #000;
 
 }
-.bc-contact {
-  margin-top: 0.25rem !important;
-top: 80%;
-margin-left: 5%;
 
+.contact-container{
+  display: flex;
+  width: 100%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bc-contact {
+  /* margin-top: 0.25rem !important; */
+margin-top: 2% !important;
+/* bottom: 0 !important; */
+margin-left: 6% !important;
+margin-right: auto;
+
+}
+
+@media screen and (max-width: 500px){
+  .business-card {
+    width: 100vw !important;
+    height: auto !important;
+  }
+  .bc-contact {
+    width: 100vw !important;
+    /* margin-left: 0.25rem !important; */
+    /* margin-top: 1rem !important; */
+  }
 }
 
 .contact-info{
@@ -829,43 +942,7 @@ max-height: 160px;
 }
 
 
-.bc-email{
-  /* margin-left: -3% !important; */
-}
-/* .bc-grid-wrapper {
-display: inline-block;
-width: 90%;
-height: 90%;
-}
-.bc-info-grid {
-  display: grid;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 3px;
-  grid-template-areas: 
-  a a a b b b
-  c c c b b b
-  d d d d d d
-  e e e e e e
-  f f f f f f
-  g g g g g g;
-  background-color: rgba(255, 255, 255, 0.363);
-  }
 
-  #bellevisite-contact-gigi .company {
-grid-area: a;
-font-family: grafolita-script, cursive;
-
-  } */
-
-  #bellevisite-contact-gigi .company-logo{
-    grid-area: b;
-    width: 100%
-  }
 
   .company-logo img {
 max-width: 100%
@@ -900,11 +977,7 @@ grid-area: c;
   div.form-container {
     width: 640px; 
     height: 3915px; 
-    /* margin-right: auto !important; */
-  
-  
-    /* margin-left: auto !important;
-    margin-right: auto !important; */
+
   
   }
 
@@ -1113,10 +1186,7 @@ nav > .container {
     max-width: 80vw !important;
   }
 
-  .profile-picture {
-    max-width: 80vw;
-height: 65vw;
-  }
+  
 
   #bellevisite-barber-profile li {
     margin-left: 2vw;
@@ -1152,7 +1222,7 @@ height: 65vw;
 }
 
 @media screen and (max-width: 700px){
-  .img-frame {
+  #gigi-profile-card .img-frame {
     max-width: 80vw;
   }
 
@@ -1195,9 +1265,7 @@ height: 65vw;
     font-size: 0.6rem;
   }
 
-  .profile-picture {
-    height: 50vh;
-      }
+ 
       
   .card-title {
 font-size: 1.7em !important;
@@ -1304,7 +1372,7 @@ padding: 5%;
   }
 
  
-  .img-frame {
+ .img-frame {
     max-width: 85vw;
   }
 
@@ -1323,9 +1391,6 @@ margin-left: -5% !important;
 
   }
 
-  .profile-picture  {
-    min-width: 70vw;
-  }
 
 
   .card-title img {
