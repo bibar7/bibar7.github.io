@@ -449,6 +449,7 @@ z-index: 1;
 
 .menu-text {
   font-size: 0.55rem !important;
+  text-transform: uppercase;
  }
 
  .navbar-toggler{
@@ -457,6 +458,7 @@ z-index: 1;
   font-size: 0.6rem !important;
   color: #ffffff80;
   font-weight: 300 !important;
+
 
  }
 
@@ -524,7 +526,7 @@ visibility: hidden;
   color: #fff;
   }
   
- a.nav-link:hover, .collapse.show ul.nav a.nav-link:hover > p.hidden-text, a.active {
+ a.nav-link:hover, .collapse.show ul.nav a.nav-link:hover > p.hidden-text, a.active, a.navbar-toggler:hover {
       color: #ff00cc;
 
   }
