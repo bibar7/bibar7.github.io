@@ -243,7 +243,6 @@ header#gigi-presents-bellevisite {
       -moz-background-size: cover;
       -o-background-size: cover; 
     background-size: 100% 100%; 
-    background-repeat: no-repeat;
     height: 100vh;
     min-width: 100vw;
     font-size: 1.4em;
@@ -366,16 +365,16 @@ a.enter img{
 
 /* Middle Navbar */
 
-nav {
+nav.site-nav {
 
   background-color: #36334a;
 
-  height: 11.25vh  !important;
+  height: 11.75vh  !important;
     /* padding: 0.5em; */
     /* padding: .5rem 0.7rem !important; */
 }
 
-#bellevisite-main-nav ul.nav {
+.site-nav ul.nav {
   display: flex;
   flex-direction: row;
   min-width: 35vw;
@@ -384,10 +383,14 @@ margin-top: 0 !important;
 
 }
 
+.site-nav ul.nav, .site-nav ul.nav li {
+  height: 10.75vh  !important;
 
-#bellevisite-main-nav ul.nav li {
+}
+
+
+  ul.nav li {
   display: inline-block;
-  height: 9vh  !important;
 
 }
 
@@ -404,7 +407,7 @@ align-items: center;
 
  
 
-#bellevisite-main-nav .navbar-expand-lg .navbar-nav {
+.site-nav .navbar-expand-lg .navbar-nav {
   position: -webkit-sticky;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -413,11 +416,11 @@ align-items: center;
 
   }
 
- #bellevisite-main-nav .container {
+ .site-nav .container {
   position: sticky;
   top: 0;
  }
-  a.nav-link {
+  .site-nav a.nav-link {
     display: inline-block;
     width: 5em;
     height: 9vh;
@@ -443,16 +446,16 @@ z-index: 1;
 
   }
   
-  #bellevisite-main-nav .nav-brand{
+ .site-nav .nav-brand{
    /* display: inline-block; */
  }
 
- #bellevisite-main-nav .menu-text {
+.site-nav .menu-text {
   font-size: 0.55rem !important;
   text-transform: uppercase;
  }
 
- #bellevisite-main-nav .navbar-toggler{
+.site-nav .navbar-toggler{
   padding: .15rem .25rem !important;
   border: 1px solid #ffffff80;
   font-size: 0.6rem !important;
@@ -462,12 +465,12 @@ z-index: 1;
 
  }
 
- #bellevisite-main-nav .navbar-toggler i {
+.site-nav .navbar-toggler i {
   margin-right: 0.05em !important;
 
  }
   
- #bellevisite-main-nav nav > .container {
+.site-nav nav > .container {
   margin: 0 0 0 1em !important;
 }
 
@@ -488,12 +491,12 @@ z-index: 1;
   
 
 
-  #bellevisite-main-nav .navbar-toggler {
+ .site-nav .navbar-toggler {
     float: right;
 
   }
 
-  #bellevisite-main-nav nav p {
+ .site-nav nav p {
   margin-top: 0vh !important;
   margin-bottom: 0 !important;
 }
@@ -502,19 +505,19 @@ z-index: 1;
 visibility: hidden;
   }
 
-  #bellevisite-main-nav .collapse.show ul.nav {
+ .site-nav .collapse.show ul.nav {
     flex-direction: column !important;
     background-color: #36334ade;
   }
-  #bellevisite-main-nav .collapse.show ul.nav a.nav-link {
+ .site-nav .collapse.show ul.nav a.nav-link {
     width: 6.5em !important;
   }
 
-  #bellevisite-main-nav .collapse.show ul.nav a > i {
+ .site-nav .collapse.show ul.nav a > i {
     margin-right: 0.5em !important;
   }
 
-  #bellevisite-main-nav .collapse.show ul.nav a > p.hidden-text {
+ .site-nav .collapse.show ul.nav a > p.hidden-text {
   visibility: visible;
   display: inline-block;
 
@@ -526,13 +529,13 @@ visibility: hidden;
   color: #fff;
   }
   
-  #bellevisite-main-nav a.nav-link:hover, .collapse.show ul.nav a.nav-link:hover > p.hidden-text, a.active, a.navbar-toggler:hover {
+ .site-nav a.nav-link:hover, .collapse.show ul.nav a.nav-link:hover > p.hidden-text, a.active, a.navbar-toggler:hover {
       color: #ff00cc;
 
   }
   
   
-  #bellevisite-main-nav a.nav-link:hover > p.hidden-text {
+ .site-nav a.nav-link:hover > p.hidden-text {
    visibility: visible;
  
         /* margin-bottom: 0 !important; */
@@ -1179,6 +1182,27 @@ iframe {
     height: auto;
   }
 
+  .panel-heading img {
+margin-top: 20% !important;  
+margin-right: auto !important;
+margin-left: auto !important;}
+
+  .panel-heading {
+    background-image: url("../images/circle.png");
+    background-repeat: no-repeat center center fixed;
+    -webkit-background-size: contain; 
+      -moz-background-size: contain;
+      -o-background-size: contain; 
+    background-size: contain; 
+    width: 180px;
+    height: 180px;
+  margin-right: auto !important;
+margin-left: auto !important;}
+
+  h4.service-title {
+    color: #0344FF;
+  }
+
 /* Footer */
 
 .site-footer {
@@ -1188,7 +1212,7 @@ iframe {
 
 
 
-#bellevisite-page-footer, #bellevisite-page-footer .container {
+#bellevisite-page-footer .container, .site-footer {
   background-color: #36334a;
 }
 
