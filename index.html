@@ -67,13 +67,13 @@
 <!-- Navbar -->
 
 <div class="main-container">
-<nav class="site-nav navbar navbar-expand-lg site_navbar site-navbar-light sticky-top" id="bellevisite-main-nav">
+<nav class="navbar navbar-expand-lg site_navbar site-navbar-light" id="bellevisite-main-nav">
 
           <a class="navbar-brand" href="index.html">                
             <img src="images/bellevisite-logo.png" alt="belleviSite logo with name in violet and blue cursive next to a violet laptop icon framing a blue heart in a white closing html tag" width="175" height="45">
           </a>
           <div class="toggler-right">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav">
                 <span class="fas fa-bars"></span> Menu
               </button>
             </div>
@@ -84,7 +84,7 @@
              
   <li class="nav-item text-center">
     
-                          <a class="nav-link text-center" href="#bellevisite-barber-profile"> 
+                          <a class="nav-link text-center" href="index.html#bellevisite-barber-profile"> 
                                 <i class="icon fas fa-id-card"></i>
                           <p class="mx-auto hidden-text">Profile</p>
                         </a>
@@ -93,14 +93,14 @@
                      
                   
                           <li class="nav-item text-center">
-                          <a class="nav-link text-center" href="#barber-portfolio-projects"> 
+                          <a class="nav-link text-center" href="index.html#barber-portfolio-projects"> 
                               <i class="icon fas fa-folder-open"></i>                              
                               <p class="mx-auto hidden-text">Projects</p>
                               </a>
                               </li>
 
                               <li class="nav-item text-center">
-                                  <a href="intake-form.html" class="nav-link"> 
+                                  <a href="intake-form.html" class="nav-link text-center"> 
                                       <i class="icon fas fa-check-circle"></i>
                                        <p class="mx-auto hidden-text">Intake Form</p>
         
@@ -114,8 +114,9 @@
               
                                             </a>
                                             </li>
+
                          <li class="nav-item text-center">
-                          <a href="#bellevisite-contact-gigi" class="nav-link text-center"> 
+                          <a href="index.html#bellevisite-contact-gigi" class="nav-link text-center"> 
                                 <i class="icon fas fa-paper-plane"></i>
                               <p class="mx-auto hidden-text">Contact</p>
 
@@ -365,11 +366,12 @@
 
 
         <div class="row row-no-gutters">
-            <div class="col-md-4 no-padding">
+            <div class="site-animate fadeInUp site-animated col-md-4 no-padding">
               <div class="container no-padding">
-                <div class="container img-frame no-padding">
-                    <a href="https://bibar7.github.io/Locavino/">
-                      <img class="img-hover projects-img" src="images/locavino.png" alt="">
+                <div class="myLightbox container img-frame no-padding lightbox-content">
+
+                  <a href="https://www.bellevisite.com/images/locavino.png" data-toggle="locavino-project" class="lightbox site-thumbnail image-popup backdrop">
+                    <img id="locavino-project" src="https://www.bellevisite.com/images/locavino.png" alt="Locavino website on laptop, desktop tablet, and phone screens" class="img-hover img-fluid lazyload">
                   </a>
               
             </div>
@@ -378,25 +380,27 @@
                 <div class="transparent-text-bg text-center">
 <p>Developed and designed this website for a local wine café using HTML5, CSS3, and jQuery (JavaScript), including JavaScript functions I created personally.
   </p>                
-  <!-- <a class="btn btn-primary" href="portfolio-item.html">Read More</a> -->
+  <a class="btn btn-primary" href="https://bibar7.github.io/Locavino/">View Now</a>
               </div>
             </div>
         </div>
       </div>
 
           <div class="col-md-4 no-padding">
-              <div class="container no-padding">
-                  <div class="container img-frame no-padding">
-                  <a href="https://bibar7.github.io/Barber-Bolling/">
-                    <img class="img-hover img-fluid" src="images/reunion.png" alt="">
-                </a>
+            <div class="container no-padding">
+              <div class="myLightbox container img-frame no-padding">
+                  <a href="https://www.bellevisite.com/images/reunion.png" data-toggle="reunion-project" class="lightbox site-thumbnail image-popup backdrop">
+                      <img id="reunion-project" src="https://www.bellevisite.com/images/reunion.png" alt="Locavino website on laptop, desktop tablet, and phone screens" class="img-hover img-fluid lazyload">
+                    </a>
+                
             
           </div>
           <div class="container project-text no-padding">
               <h4 class="project-title text-center">Family Reunion Website</h4>
               <div class="transparent-text-bg text-center">
 <p>Created a virtual home-base for my annual family reunion using HTML5, CSS3, jQuery, and JavaScript plugins among other tools.
-  </p>                  <!-- <a class="btn btn-primary" href="portfolio-item.html">Read More</a> -->
+  </p>                  
+  <a class="btn btn-primary" href="https://bibar7.github.io/Barber-Bolling/">View Now</a>
             </div>
           </div>
         </div>
@@ -405,18 +409,19 @@
 
 
       <div class="col-md-4 no-padding">
-          <div class="container no-padding">
-              <div class="container img-frame no-padding">
-                <a href="https://bibar7.github.io/resume/">
-                  <img class="img-fluid img-hover projects-img" src="images/resume.png" alt="">
-              </a>
+        <div class="container no-padding">
+          <div class="myLightbox container img-frame no-padding">
+              <a href="https://www.bellevisite.com/images/resume.png" data-toggle="resume-project" class="lightbox site-thumbnail image-popup backdrop">
+                  <img id="resume-project" src="https://www.bellevisite.com/images/resume.png" alt="Locavino website on laptop, desktop tablet, and phone screens" class="img-hover img-fluid lazyload">
+                </a>
+          
           
         </div>
         <div class="container project-text no-padding">
             <h4 class="project-title text-center">Curriculum Vitae</h4>
             <div class="transparent-text-bg text-center">
             <p>Extensively designed, customized, and coded (HTML, CSS, PHP, and JS) a basic resume template to showcases my career history and background.</p>
-            <!-- <a class="btn btn-primary" href="portfolio-item.html">Read More</a> -->
+            <a class="btn btn-primary" href="https://bibar7.github.io/resume/">View Now</a>
           </div>
         </div>
     </div>
@@ -425,6 +430,16 @@
 </div>
 
       </div>
+
+      <script>
+        lightbox.option({
+          'alwaysShowNavOnTouchDevices': true,
+          'wrapAround': true,
+        });
+        $('.myLightbox').lightbox.option;
+
+
+    </script>
 
             </section>
 
@@ -461,7 +476,7 @@
 
               
 
-                      <div class="business-card container" id="bc-card">
+                      <div class="business-card container no-padding" id="bc-card">
                           <div class="bc-content align-items-center mt-2">
 
                               <div class="flex-row row-no-gutters d-flex justify-content-center">
@@ -487,26 +502,39 @@
 
 
                             <div class="flex-row row-no-gutters d-flex justify-content-center">
-                                <div class="contact-container bc-contact mb-1">
+                                <div class="container bc-contact mb-1">
 
 
-  <div class="col-3 col-sm-3 contact-info no-padding d-inline-flex p-2 mr-2">
-      <a href="mailto:biaggi@bellevisite.com?Subject=Portfolio%20Contact%20via%20BC" class="text-left">biaggi@bellevisite.com</a>
-    </div>      
-    <div class="col-1 col-sm-1 contact-info d-inline-flex p-2">
-        <i class="fas fa-heart align-middle ml-2"></i>
+      <table class="table-borderless text-center">
+        <tbody>
+          <tr>
+            <td>
+              <a href="mailto:biaggi@bellevisite.com?Subject=Portfolio%20Contact%20via%20BC">biaggi@bellevisite.com</a>
 
-    </div>
-    <div class="col-3 col-sm-3 contact-info no-padding d-inline-flex p-2 mr-1">
-        <a href="https://www.bellevisite.com/" class="text-right ml-1">www.bellevisite.com</a>
-      </div>
-      <div class="col-1 col-sm-1 contact-info d-inline-flex p-2">
-          <i class="fas fa-heart align-middle ml-1"></i>
-  
-      </div>
-    <div class="col-3 col-sm-3 contact-info no-padding d-inline-flex p-2 last">
-        <a class="text-left" href="tel:240-449-0162">240-449-0162</a>
-      </div>
+            </td>
+            <td>
+              <i class="fas fa-heart align-middle bc-heart"></i>
+            </td>
+            <td>
+              <a href="https://www.bellevisite.com/">www.bellevisite.com</a>
+
+            </td>
+            <td>
+              <i class="fas fa-heart align-middle bc-heart"></i>
+            </td>
+            <td>
+              <a href="tel:240-449-0162">240-449-0162</a>
+
+            </td>
+
+          </tr>
+</tbody>
+
+
+
+
+      </table>
+
 
     </div>
 
@@ -533,8 +561,8 @@
                                   <div class="col-md-4 site-animate fadeInUp site-animated">
                                     <h4 class="mt-3 site-heading-2 footer-heading">About Me</h4>
                     
-                                    <p style="color: white;"> Biaggi “GiGi” Barber is a DC-native with a passion for mobile and personal computer-based technology, which is merely the foremost among an array of her diverse interests. Check out her social media for more!</p>
-                                    <ul class="site-footer-social d-flex list-unstyled align-items-center justify-content-center text-center">
+                                    <p class="mb-4" style="color: white;"> Biaggi “GiGi” Barber is a DC-native with a passion for mobile and personal computer-based technology, which is merely the foremost among an array of her diverse interests. Check out her social media for more!</p>
+                                    <ul class="site-footer-social d-flex list-unstyled align-items-center justify-content-center text-center mt-2">
                                             <li class="site-animate fadeInUp site-animated"><a class="follow mr-4" href="https://github.com/bibar7" target="_blank" rel="noopener"><span class="soc-ico fab fa-github"></span></a></li>
                                             <li class="site-animate fadeInUp site-animated"><a class="follow mr-4" href="https://twitter.com/unefemmegigi" target="_blank" rel="noopener"><span class="soc-ico fab fa-twitter"></span></a></li>
                                             <li class="site-animate fadeInUp site-animated"><a class="follow mr-4" href="https://www.instagram.com/histoiredunefemmegigi/" target="_blank" rel="noopener"><span class="soc-ico fab fa-instagram"></span></a></li>
@@ -581,8 +609,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
      <script src="vendor/jquery/jquery.easing.1.3.js"></script>
-     <script src="js/jquery.waypoints.min.js"></script>
-     <script src="js/lightbox.min.js"></script>
+     <script src="vendor/jquery/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.min.css"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.min.js"></script>
+
 
   <!-- Menu Toggle Script -->
   <!-- <script>

@@ -363,19 +363,21 @@ a.enter img{
  
 }
 
-/* Middle Navbar */
+/* Navbar */
 
-nav.site-nav {
+nav {
+  position: fixed;
+  z-index: 100;
+  background-color: #3a3848;
 
-  background-color: #36334a;
-
-  height: 11.75vh  !important;
+  height: 11.25vh  !important;
     /* padding: 0.5em; */
     /* padding: .5rem 0.7rem !important; */
 }
 
-.site-nav ul.nav {
+ul.nav {
   display: flex;
+  background-color: #3a3848;
   flex-direction: row;
   min-width: 35vw;
 margin-top: 0 !important;
@@ -383,23 +385,27 @@ margin-top: 0 !important;
 
 }
 
-.site-nav ul.nav, .site-nav ul.nav li {
-  height: 10.75vh  !important;
-
+.collapse.show ul.nav {
+  flex-direction: column !important;
+  margin-top: 1em !important;
+  z-index: 100;
 }
 
-
-  ul.nav li {
+ul.nav li {
   display: inline-block;
+  height: 9vh  !important;
 
 }
 
+.collapse.show ul.nav li, .collapse.show ul.nav li .icon {
+  color: #ff00cc;
+}
 
 #bellevisite-main-nav .container{
   padding-right: 0 !important;
 }
  
-#bellevisite-main-nav .nav-wrapper {
+.nav-wrapper {
   display: flex;
 align-items: center;
 
@@ -407,7 +413,7 @@ align-items: center;
 
  
 
-.site-nav .navbar-expand-lg .navbar-nav {
+.navbar-expand-lg .navbar-nav {
   position: -webkit-sticky;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -416,11 +422,13 @@ align-items: center;
 
   }
 
- .site-nav .container {
+ nav > .container {
   position: sticky;
   top: 0;
+  z-index: 100;
+
  }
-  .site-nav a.nav-link {
+  a.nav-link {
     display: inline-block;
     width: 5em;
     height: 9vh;
@@ -442,20 +450,19 @@ align-items: center;
     margin-top: 0vh !important;
     margin-bottom: 0.1em !important;
 
-z-index: 1;
 
   }
   
- .site-nav .nav-brand{
+ .nav-brand{
    /* display: inline-block; */
  }
 
-.site-nav .menu-text {
+.menu-text {
   font-size: 0.55rem !important;
   text-transform: uppercase;
  }
 
-.site-nav .navbar-toggler{
+ .navbar-toggler{
   padding: .15rem .25rem !important;
   border: 1px solid #ffffff80;
   font-size: 0.6rem !important;
@@ -465,12 +472,12 @@ z-index: 1;
 
  }
 
-.site-nav .navbar-toggler i {
+ .navbar-toggler i {
   margin-right: 0.05em !important;
 
  }
   
-.site-nav nav > .container {
+ nav > .container {
   margin: 0 0 0 1em !important;
 }
 
@@ -481,7 +488,7 @@ z-index: 1;
  
   
   .brand-left {
-    max-width: 12em;
+    max-width: 9.5em;
     margin-top: -1vh !important;
     margin-left: -5vw !important;
     overflow: hidden;
@@ -489,14 +496,18 @@ z-index: 1;
     margin-right: auto;
   }
   
+  a.nav-brand img {
+    /* width: 100%;
+    height: auto; */
+    /* margin-top: 10px; */
+  }
 
-
- .site-nav .navbar-toggler {
+  .navbar-toggler {
     float: right;
 
   }
 
- .site-nav nav p {
+ nav p {
   margin-top: 0vh !important;
   margin-bottom: 0 !important;
 }
@@ -505,22 +516,18 @@ z-index: 1;
 visibility: hidden;
   }
 
- .site-nav .collapse.show ul.nav {
-    flex-direction: column !important;
-    background-color: #36334ade;
-  }
- .site-nav .collapse.show ul.nav a.nav-link {
-    width: 6.5em !important;
+  .collapse.show ul.nav a.nav-link {
+    width: 8.5em !important;
   }
 
- .site-nav .collapse.show ul.nav a > i {
+  .collapse.show ul.nav a > i {
     margin-right: 0.5em !important;
   }
 
- .site-nav .collapse.show ul.nav a > p.hidden-text {
+  .collapse.show ul.nav li a p.hidden-text {
   visibility: visible;
   display: inline-block;
-
+color: #ff00cc !important;
   margin-bottom: 0 !important;
   font-size: 0.7em;
   font-weight: 500;
@@ -529,13 +536,13 @@ visibility: hidden;
   color: #fff;
   }
   
- .site-nav a.nav-link:hover, .collapse.show ul.nav a.nav-link:hover > p.hidden-text, a.active, a.navbar-toggler:hover {
+ a.nav-link:hover, .collapse.show ul.nav a.nav-link:hover > p.hidden-text, a.active, a.navbar-toggler:hover {
       color: #ff00cc;
 
   }
   
   
- .site-nav a.nav-link:hover > p.hidden-text {
+a.nav-link:hover > p.hidden-text {
    visibility: visible;
  
         /* margin-bottom: 0 !important; */
@@ -546,7 +553,10 @@ visibility: hidden;
         color: #ff00cc;
   }
 
-
+.collapse.show ul.nav li a.nav-link:hover > p.hidden-text,
+.collapse.show ul.nav li a.nav-link:hover > .icon {
+  color: #0344FF !important; 
+}
 
 
 /* Profile Card */
@@ -776,6 +786,8 @@ color: #741EE8;
 /* Intro Article */
 
 #about-bellevisite .container-bg {
+  position: relative;
+  z-index: -1;
   background-color: #001b69;
   background-image: url("../images/brick-bg-1.jpeg");
 background-size: cover;
@@ -1027,20 +1039,70 @@ margin-right: auto;
   }
 }
 
+table {
+  width: 100% !important;
+  margin: auto !important;
+  margin-left: -3% !important;
 
-@media screen and (min-width: 1000px) {
-  body {
-    font-size: 17px;
-  }
 }
 
-#bellevisite-contact-gigi i {
+td {
+  color:#ff00cc;
+}
+
+td a:hover {
+  color: white !important;
+}
+
+
+@media screen and (min-width: 492) and (max-width: 768px) {
+
+tbody {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+
+}
+
+
+@media screen and (max-width: 491px){
+  table {
+    width: 100vw !important;
+    margin-left: -8% !important;
+  }
+tbody {
+  font-size: 0.8em;
+}
+  }
+
+
+@media screen and (max-width: 768px) {
+  /* tbody {
+    font-size: 0.8em;
+  } */
+}
+
+tbody {
+  width: 100% !important;
+}
+
+
+i.bc-heart{
 display: inline-block;
   color: #ff33cc;
-  font-size: 0.4em;
-  margin-left: 10%;
+  font-size: 0.35em;
+}
 
+@media screen and (max-width: 768px) {
+  i.bc-heart{
+    font-size: 0.45em !important;
+  }
 
+  bch-2 {
+    margin-left: 4em !important
+
+  }
 }
 
 .no-padding {
