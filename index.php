@@ -258,7 +258,7 @@
                   <div class="col-md-8 px-3">
                     <div class="wrapper">                                                                       
 
-                    <div class="card-block px-1 pt-2">
+                    <div class="card-block px-3">
                       <h3 class="card-title"><span class="business-name"><span class="first-name">biaggi</span><span class="last-name">Barber</span></span></h3>
                       <h6 class="text-muted"><span class="icon fas fa-briefcase profile-icon mb-1 mr-1"></span>  Junior Web Developer/Designer</h6>
                       <h6 class="text-muted"><span class="icon fas fa-map-marker-alt profile-icon mb-1 mr-1"></span>  Washington D.C./Baltimore Metropolitan Area</h6>

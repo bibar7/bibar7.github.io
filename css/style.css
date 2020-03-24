@@ -174,9 +174,13 @@ background-color: #741EE8 !important;
 
 }
 
+.appeal-to-consumer {
+  font-size: 1.5rem;
 
+}
 
 .call-to-action {
+  color: #FF29E4;
   font-size: 1.2rem;
   line-height: 0.9;
   font-style: italic;
@@ -255,7 +259,7 @@ span.first-name{
 /* Header */
 
 header#gigi-presents-bellevisite {
-    background-image: url('../images/neon-frame.jpeg'); 
+    background-image: url('https://www.bellevisite.com/images/neon-frame.jpeg'); 
     background-repeat: no-repeat center center fixed;
     -webkit-background-size: cover; 
       -moz-background-size: cover;
@@ -388,9 +392,18 @@ nav {
   z-index: 100;
   background-color: #3a3848;
 
-  height: 11.25vh  !important;
+  height: 4.5em !important;
     /* padding: 0.5em; */
     /* padding: .5rem 0.7rem !important; */
+}
+
+@media screen and (min-width: 1500px){
+  nav {
+  height: 3em  !important;
+  }
+}
+.navbar {
+  padding: .9rem 0.9rem !important;
 }
 
 ul.nav {
@@ -405,14 +418,22 @@ margin-top: 0 !important;
 
 .collapse.show ul.nav {
   flex-direction: column !important;
-  margin-top: 1em !important;
+  margin-top: 0.5em !important;
   z-index: 100;
 }
 
 ul.nav li {
   display: inline-block;
-  height: 9vh  !important;
+  height: 3.5em  !important;
 
+}
+
+@media screen and (min-width: 1500px){
+
+
+li.nav-item{
+  height: 2.3em  !important;
+  }
 }
 
 .collapse.show ul.nav li, .collapse.show ul.nav li .icon {
@@ -449,7 +470,7 @@ align-items: center;
   a.nav-link {
     display: inline-block;
     width: 5em;
-    height: 9vh;
+    height: 3em !important;
     margin-left: 0.5em !important; 
     margin-top: -0.2em !important; 
     text-align: center;
@@ -465,13 +486,13 @@ align-items: center;
     display: inline-block;
     vertical-align: middle;
     font-size: 1.25em;
-    margin-top: 0vh !important;
-    margin-bottom: 0.1em !important;
+    margin-top: -0.2vh !important;
+    margin-bottom: 0.15em !important;
 
 
   }
   
- .nav-brand{
+ .navbar-brand{
    /* display: inline-block; */
  }
 
@@ -507,17 +528,18 @@ align-items: center;
   
   .brand-left {
     max-width: 9.5em;
-    margin-top: -1vh !important;
-    margin-left: -5vw !important;
+    /* margin-top: -2em !important;
+    margin-left: -1em !important; */
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px !important;
+
   }
   
   a.nav-brand img {
     /* width: 100%;
     height: auto; */
-    /* margin-top: 10px; */
   }
 
   .navbar-toggler {
@@ -532,6 +554,9 @@ align-items: center;
 
   .hidden-text {
 visibility: hidden;
+  margin-bottom: 0.25em !important;
+  line-height: 0.95 !important;
+
   }
 
   .collapse.show ul.nav a.nav-link {
@@ -546,7 +571,7 @@ visibility: hidden;
   visibility: visible;
   display: inline-block;
 color: #ff00cc !important;
-  margin-bottom: 0 !important;
+  /* margin-bottom: 0 !important; */
   font-size: 0.7em;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -592,24 +617,36 @@ color: white;
 }
 
 
-#gigi-profile-card .wrapper {
+#gigi-profile-card {
   /* height: 100% !important; */
   /* max-height: 72vh !important;   */
 
   display: flex;
   border: 2px solid #fff;
   background-color: #6b5b83;
-  background-image: url("../images/brick-bg-2.jpeg");
+  background-image: url("https://www.bellevisite.com/images/brick-bg-2.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
 }
-/* 
-#gigi-profile-card img{
-  height: 100% !important;
-  width: auto;
-} */
+
+.card-img-body {
+  display: flex;
+  height: 100% !important; 
+width: 100%! important;
+  background-image: url("https://www.bellevisite.com/images/IMG_3476.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;}
+
+  @media screen and (max-width: 768px){
+    .card-img-body{
+      height: 25em !important;
+      /* max-width: 45vw !important; */
+    }
+  }
+   
 
 #gigi-profile-card .container {
   overflow: hidden;
@@ -684,7 +721,7 @@ padding: 0.9rem !important;
   height: 100%;
 overflow: hidden;
   background-color: #0344FF;
-  background-image: url("../images/IMG_3476.jpg");
+  background-image: url("https://www.bellevisite.com/images/IMG_3476.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -807,7 +844,7 @@ color: #741EE8;
   position: relative;
   z-index: -1;
   background-color: #001b69;
-  background-image: url("../images/brick-bg-1.jpeg");
+  background-image: url("https://www.bellevisite.com/images/brick-bg-1.jpeg");
 background-size: cover;
 background-position: center center;
 /* background-repeat: no-repeat; */
@@ -984,7 +1021,7 @@ h4.project-title{
   height: 16.5em !important;
   display: flex;
 
-        background-image: url('../images/brick-bg-3.jpeg');
+        background-image: url('https://www.bellevisite.com/images/brick-bg-3.jpeg');
         background-size: 100% 100%;
         border-radius: 5%;
 
@@ -1289,7 +1326,7 @@ iframe {
   #services-subpage-header {
     width: 100vw !important;
     height: 315px;
-    background-image: url("../images/tutoring.jpeg") !important;
+    background-image: url("https://www.bellevisite.com/images/tutoring.jpeg") !important;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1305,7 +1342,7 @@ iframe {
   #bellevisite-intake-subpage header {
     width: 100vw !important;
     height: 315px;
-    background-image: url("../images/296643810.jpeg");
+    background-image: url("https://www.bellevisite.com/images/296643810.jpeg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1322,7 +1359,7 @@ margin-right: auto !important;
 margin-left: auto !important;}
 
   .panel-heading {
-    background-image: url("../images/circle.png");
+    background-image: url("https://www.bellevisite.com/images/circle.png");
     background-repeat: no-repeat center center fixed;
     -webkit-background-size: contain; 
       -moz-background-size: contain;
@@ -1434,7 +1471,7 @@ z-index: 1;
 
 
 .navbar-brand {
-  margin-top: -0.5vh !important;
+  margin-top: -0.5em !important;
 padding: 0 !important;
 font-size: 1rem !important;
 }
